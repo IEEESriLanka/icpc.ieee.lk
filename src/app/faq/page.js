@@ -190,23 +190,23 @@ export default function FAQ() {
       </section>
 
       {/* Still Have Questions */}
-      <section className="py-24 bg-white">
+      <section className="py-12 sm:py-16 md:py-24 bg-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <FadeIn>
-            <h2 className="text-5xl md:text-6xl font-bold text-gray-900 mb-8">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 sm:mb-8 px-4">
               Still Have Questions?
             </h2>
-            <div className="h-2 w-24 bg-[#FDBC1D] mx-auto mb-10 rounded-full"></div>
+            <div className="h-2 w-20 sm:w-24 bg-[#FDBC1D] mx-auto mb-6 sm:mb-8 md:mb-10 rounded-full"></div>
           </FadeIn>
           <FadeIn delay={0.2}>
-            <p className="text-2xl text-[#143C68] font-semibold mb-12">
+            <p className="text-lg sm:text-xl md:text-2xl text-[#143C68] font-semibold mb-8 sm:mb-10 md:mb-12 px-4">
               Contact the ICPC Sri Lanka organizing committee for more information
             </p>
           </FadeIn>
           <ScaleIn delay={0.4}>
             <a
               href="mailto:icpc@sites.pdn.ac.lk"
-              className="inline-block bg-[#143C68] text-white px-12 py-4 rounded-2xl text-xl font-bold hover:bg-[#1e4a7a] transition-all duration-300 hover:-translate-y-1 shadow-xl hover:shadow-2xl"
+              className="inline-block bg-[#143C68] text-white px-8 sm:px-10 md:px-12 py-3 sm:py-4 rounded-xl sm:rounded-2xl text-base sm:text-lg md:text-xl font-bold hover:bg-[#1e4a7a] transition-all duration-300 hover:-translate-y-1 shadow-xl hover:shadow-2xl w-full sm:w-auto"
             >
               Contact Us
             </a>
@@ -216,16 +216,16 @@ export default function FAQ() {
 
       {/* CTA Section */}
       <FadeIn>
-        <section className="py-24 bg-[#FDBC1D]">
+        <section className="py-12 sm:py-16 md:py-24 bg-[#FDBC1D]">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 className="text-5xl md:text-6xl font-bold text-[#143C68] mb-8">Ready to Register?</h2>
-            <p className="text-2xl text-[#143C68] font-semibold mb-12">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#143C68] mb-6 sm:mb-8 px-4">Ready to Register?</h2>
+            <p className="text-lg sm:text-xl md:text-2xl text-[#143C68] font-semibold mb-8 sm:mb-10 md:mb-12 px-4">
               Don&apos;t wait! Registration opens on 11th November 2025
             </p>
             <ScaleIn delay={0.3}>
               <Link
                 href="/registration"
-                className="inline-block bg-[#143C68] text-white px-12 py-4 rounded-2xl text-xl font-bold hover:bg-[#1e4a7a] transition-all duration-300 hover:-translate-y-1 shadow-xl hover:shadow-2xl"
+                className="inline-block bg-[#143C68] text-white px-8 sm:px-10 md:px-12 py-3 sm:py-4 rounded-xl sm:rounded-2xl text-base sm:text-lg md:text-xl font-bold hover:bg-[#1e4a7a] transition-all duration-300 hover:-translate-y-1 shadow-xl hover:shadow-2xl w-full sm:w-auto"
               >
                 Registration Details
               </Link>

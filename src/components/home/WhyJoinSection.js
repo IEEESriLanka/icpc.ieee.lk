@@ -35,7 +35,7 @@ export default function WhyJoinSection() {
         </FadeIn>
         
         <StaggerContainer>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
             <StaggerItem>
               <ModernBenefitCard
                 icon={<TrophyIcon className="w-20 h-20" />}
@@ -64,13 +64,13 @@ export default function WhyJoinSection() {
         </StaggerContainer>
         
         <FadeIn delay={0.6}>
-          <div className="text-center mt-16">
+          <div className="text-center mt-12 sm:mt-16">
             <Link
               href="/why-join"
-              className="group inline-flex items-center gap-4 bg-[#FDBC1D] text-[#143C68] px-10 py-6 rounded-2xl text-xl font-bold hover:bg-[#e6a91a] transition-all duration-300 shadow-2xl transform hover:scale-105"
+              className="group inline-flex items-center gap-3 sm:gap-4 bg-[#FDBC1D] text-[#143C68] px-6 sm:px-8 md:px-10 py-4 sm:py-5 md:py-6 rounded-xl sm:rounded-2xl text-base sm:text-lg md:text-xl font-bold hover:bg-[#e6a91a] transition-all duration-300 shadow-2xl transform hover:scale-105 w-full sm:w-auto justify-center"
             >
               <span>Discover All Benefits</span>
-              <ArrowRightIcon className="w-6 h-6 group-hover:translate-x-1 transition-transform" />
+              <ArrowRightIcon className="w-5 h-5 sm:w-6 sm:h-6 group-hover:translate-x-1 transition-transform" />
             </Link>
           </div>
         </FadeIn>

@@ -47,16 +47,16 @@ export default function Gallery() {
       </FadeIn>
 
       {/* Gallery Grid */}
-      <section className="py-24 bg-gray-50">
+      <section className="py-12 sm:py-16 md:py-24 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <FadeIn>
-            <div className="text-center mb-20">
-              <h2 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">Photo Gallery</h2>
-              <div className="h-2 w-24 bg-[#FDBC1D] mx-auto mb-8 rounded-full"></div>
-              <p className="text-2xl text-[#143C68] font-semibold">Moments from ICPC competitions worldwide</p>
+            <div className="text-center mb-12 sm:mb-16 md:mb-20">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-4 sm:mb-6 px-4">Photo Gallery</h2>
+              <div className="h-2 w-20 sm:w-24 bg-[#FDBC1D] mx-auto mb-6 sm:mb-8 rounded-full"></div>
+              <p className="text-lg sm:text-xl md:text-2xl text-[#143C68] font-semibold px-4">Moments from ICPC competitions worldwide</p>
             </div>
           </FadeIn>
-          <StaggerContainer className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <StaggerContainer className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
             {images.map((image) => (
               <StaggerItem key={image.id}>
                 <button
@@ -125,35 +125,35 @@ export default function Gallery() {
       )}
 
       {/* Inspiration Section */}
-      <section className="py-24 bg-white">
+      <section className="py-12 sm:py-16 md:py-24 bg-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <FadeIn>
-            <div className="text-center mb-16">
-              <h2 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">Be Part of the Legacy</h2>
-              <div className="h-2 w-24 bg-[#FDBC1D] mx-auto mb-8 rounded-full"></div>
-              <p className="text-2xl text-[#143C68] font-semibold max-w-3xl mx-auto">
+            <div className="text-center mb-12 sm:mb-16">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-4 sm:mb-6 px-4">Be Part of the Legacy</h2>
+              <div className="h-2 w-20 sm:w-24 bg-[#FDBC1D] mx-auto mb-6 sm:mb-8 rounded-full"></div>
+              <p className="text-lg sm:text-xl md:text-2xl text-[#143C68] font-semibold max-w-3xl mx-auto px-4">
                 Join thousands of passionate programmers who have made their mark in competitive programming
               </p>
             </div>
           </FadeIn>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 mb-12 sm:mb-16">
             <FadeInUp>
-              <div className="text-center p-8 bg-gray-50 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
-                <div className="text-6xl font-bold text-[#143C68] mb-4">50+</div>
-                <div className="text-xl text-gray-700 font-semibold">Countries Participating</div>
+              <div className="text-center p-6 sm:p-8 bg-gray-50 rounded-2xl sm:rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+                <div className="text-4xl sm:text-5xl md:text-6xl font-bold text-[#143C68] mb-3 sm:mb-4">50+</div>
+                <div className="text-base sm:text-lg md:text-xl text-gray-700 font-semibold">Countries Participating</div>
               </div>
             </FadeInUp>
             <FadeInUp>
-              <div className="text-center p-8 bg-gray-50 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
-                <div className="text-6xl font-bold text-[#143C68] mb-4">65K+</div>
-                <div className="text-xl text-gray-700 font-semibold">Students Worldwide</div>
+              <div className="text-center p-6 sm:p-8 bg-gray-50 rounded-2xl sm:rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+                <div className="text-4xl sm:text-5xl md:text-6xl font-bold text-[#143C68] mb-3 sm:mb-4">65K+</div>
+                <div className="text-base sm:text-lg md:text-xl text-gray-700 font-semibold">Students Worldwide</div>
               </div>
             </FadeInUp>
             <FadeInUp>
-              <div className="text-center p-8 bg-gray-50 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
-                <div className="text-6xl font-bold text-[#FDBC1D] mb-4">45+</div>
-                <div className="text-xl text-gray-700 font-semibold">Years of Excellence</div>
+              <div className="text-center p-6 sm:p-8 bg-gray-50 rounded-2xl sm:rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+                <div className="text-4xl sm:text-5xl md:text-6xl font-bold text-[#FDBC1D] mb-3 sm:mb-4">45+</div>
+                <div className="text-base sm:text-lg md:text-xl text-gray-700 font-semibold">Years of Excellence</div>
               </div>
             </FadeInUp>
           </div>
@@ -162,16 +162,16 @@ export default function Gallery() {
 
       {/* Call to Action */}
       <FadeIn>
-        <section className="py-24 bg-[#FDBC1D]">
+        <section className="py-12 sm:py-16 md:py-24 bg-[#FDBC1D]">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 className="text-5xl md:text-6xl font-bold text-[#143C68] mb-8">Be Part of ICPC Sri Lanka 2026</h2>
-            <p className="text-2xl text-[#143C68] mb-12 font-semibold">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#143C68] mb-6 sm:mb-8 px-4">Be Part of ICPC Sri Lanka 2026</h2>
+            <p className="text-lg sm:text-xl md:text-2xl text-[#143C68] mb-8 sm:mb-10 md:mb-12 font-semibold px-4">
               Create your own memories at Sri Lanka&apos;s first ICPC competition
             </p>
             <ScaleIn delay={0.3}>
               <Link
                 href="/registration"
-                className="inline-block bg-[#143C68] text-white px-12 py-4 rounded-2xl font-bold text-xl hover:bg-[#1e4a7a] transition-all duration-300 hover:-translate-y-1 shadow-xl hover:shadow-2xl"
+                className="inline-block bg-[#143C68] text-white px-8 sm:px-10 md:px-12 py-3 sm:py-4 rounded-xl sm:rounded-2xl font-bold text-base sm:text-lg md:text-xl hover:bg-[#1e4a7a] transition-all duration-300 hover:-translate-y-1 shadow-xl hover:shadow-2xl w-full sm:w-auto"
               >
                 Register Your Team
               </Link>

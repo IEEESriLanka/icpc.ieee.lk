@@ -33,7 +33,7 @@ export default function StatsSection() {
         </FadeIn>
         
         <StaggerContainer>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 md:gap-8 mb-12 sm:mb-16 md:mb-20">
             <StaggerItem>
               <ModernStatCard 
                 icon={<GlobeAltIcon className="w-20 h-20" />}
@@ -66,16 +66,16 @@ export default function StatsSection() {
         
         <ScaleIn delay={0.5}>
           <div className="text-center">
-            <div className="bg-[#143C68] rounded-3xl p-12 md:p-16 shadow-2xl">
-              <div className="flex flex-col md:flex-row items-center gap-6 text-white">
+            <div className="bg-[#143C68] rounded-2xl sm:rounded-3xl p-6 sm:p-8 md:p-12 lg:p-16 shadow-2xl">
+              <div className="flex flex-col md:flex-row items-center gap-4 sm:gap-6 text-white">
                 <div className="flex-shrink-0">
-                  <div className="w-20 h-20 bg-[#FDBC1D] rounded-2xl flex items-center justify-center shadow-xl">
-                    <TrophyIcon className="w-12 h-12 text-[#143C68]" />
+                  <div className="w-16 h-16 sm:w-20 sm:h-20 bg-[#FDBC1D] rounded-xl sm:rounded-2xl flex items-center justify-center shadow-xl">
+                    <TrophyIcon className="w-10 h-10 sm:w-12 sm:h-12 text-[#143C68]" />
                   </div>
                 </div>
                 <div className="text-center md:text-left">
-                  <h3 className="text-3xl md:text-4xl font-bold mb-4">One Goal</h3>
-                  <p className="text-xl md:text-2xl font-semibold">
+                  <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4">One Goal</h3>
+                  <p className="text-lg sm:text-xl md:text-2xl font-semibold">
                     Push the limits of human creativity and teamwork
                   </p>
                 </div>

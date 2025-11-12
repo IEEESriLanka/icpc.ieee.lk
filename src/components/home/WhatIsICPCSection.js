@@ -59,25 +59,25 @@ export default function WhatIsICPCSection() {
               
               <Link
                 href="/about"
-                className="group inline-flex items-center gap-4 bg-[#143C68] text-white px-10 py-6 rounded-2xl text-xl font-bold hover:bg-[#1e4a7a] transition-all duration-300 shadow-2xl transform hover:scale-105"
+                className="group inline-flex items-center gap-3 sm:gap-4 bg-[#143C68] text-white px-6 sm:px-8 md:px-10 py-4 sm:py-5 md:py-6 rounded-xl sm:rounded-2xl text-base sm:text-lg md:text-xl font-bold hover:bg-[#1e4a7a] transition-all duration-300 shadow-2xl transform hover:scale-105 w-full sm:w-auto justify-center"
               >
                 <span>Learn More About ICPC</span>
-                <ArrowRightIcon className="w-6 h-6 group-hover:translate-x-1 transition-transform" />
+                <ArrowRightIcon className="w-5 h-5 sm:w-6 sm:h-6 group-hover:translate-x-1 transition-transform" />
               </Link>
             </div>
           </FadeInLeft>
           
           <FadeInRight>
-            <div className="bg-[#143C68] rounded-3xl p-12 text-white shadow-2xl">
-              <div className="flex items-center gap-4 mb-8">
-                <div className="w-12 h-12 bg-[#FDBC1D] rounded-2xl flex items-center justify-center">
-                  <FaRocket className="w-8 h-8 text-[#143C68]" />
+            <div className="bg-[#143C68] rounded-2xl sm:rounded-3xl p-6 sm:p-8 md:p-12 text-white shadow-2xl">
+              <div className="flex items-center gap-3 sm:gap-4 mb-6 sm:mb-8">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-[#FDBC1D] rounded-xl sm:rounded-2xl flex items-center justify-center">
+                  <FaRocket className="w-6 h-6 sm:w-8 sm:h-8 text-[#143C68]" />
                 </div>
-                <h3 className="text-4xl font-bold text-white">Sri Lanka Joins the Map</h3>
+                <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white">Sri Lanka Joins the Map</h3>
               </div>
               
-              <p className="text-xl mb-10 text-white/95 leading-relaxed">
-                In 2026, <span className="text-[#FDBC1D] font-bold text-2xl">Sri Lanka makes history</span> as 
+              <p className="text-base sm:text-lg md:text-xl mb-6 sm:mb-8 md:mb-10 text-white/95 leading-relaxed">
+                In 2026, <span className="text-[#FDBC1D] font-bold text-xl sm:text-2xl">Sri Lanka makes history</span> as 
                 we host our first-ever ICPC contest. This is your chance to be a pioneer.
               </p>
               
