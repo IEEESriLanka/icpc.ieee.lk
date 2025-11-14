@@ -111,7 +111,33 @@
         {
           "id": "after-3",
           "question": "How will we know if we qualify for the World Finals?",
-          "answer": "Top-performing teams from the Sri Lanka Regional will qualify for the Asia West Finals. From there, the best teams advance to the ICPC World Finals."
+          "answer": "The champion team from the Sri Lanka National Contest advances directly to the ICPC World Finals. Five runner-up teams will compete at the Asia West Regional, where top performers also advance to the World Finals."
+        }
+      ]
+    },
+    {
+      "id": "awards-prizes",
+      "name": "Awards & Prizes",
+      "questions": [
+        {
+          "id": "awards-1",
+          "question": "What prizes will the winners receive?",
+          "answer": "Winners will receive trophies, official ICPC certificates, cash prizes, and exciting awards. All teams will receive certificates of participation."
+        },
+        {
+          "id": "awards-2",
+          "question": "What does 'one award per institution' mean?",
+          "answer": "Only one award per institution means that a maximum of six teams from six different universities will receive awards. This ensures fair distribution of recognition across universities and encourages participation from diverse institutions throughout Sri Lanka."
+        },
+        {
+          "id": "awards-3",
+          "question": "Will travel and accommodation be covered?",
+          "answer": "Yes! Teams advancing to the Asia West Regional and World Finals will have their accommodations covered, including lodging and meals for team members."
+        },
+        {
+          "id": "awards-4",
+          "question": "Are there cash prizes?",
+          "answer": "Yes, there will be cash prizes for winning teams along with trophies and certificates. Additional exciting awards will also be announced closer to the contest date."
         }
       ]
     }

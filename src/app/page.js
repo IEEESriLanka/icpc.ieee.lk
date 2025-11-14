@@ -4,6 +4,7 @@ import WhatIsICPCSection from '@/components/home/WhatIsICPCSection';
 import WhyJoinSection from '@/components/home/WhyJoinSection';
 import HowItWorksSection from '@/components/home/HowItWorksSection';
 import TimelineSection from '@/components/home/TimelineSection';
+import AwardsSection from '@/components/home/AwardsSection';
 import CTASection from '@/components/home/CTASection';
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
       <WhyJoinSection />
       <HowItWorksSection />
       <TimelineSection />
+      <AwardsSection />
       <CTASection />
     </main>
   );

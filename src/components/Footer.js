@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { FaFacebook, FaWhatsapp, FaLinkedin, FaEnvelope, FaMapMarkerAlt, FaHandshake } from 'react-icons/fa';
+import { FaFacebook, FaWhatsapp, FaLinkedin, FaEnvelope, FaMapMarkerAlt, FaHandshake, FaYoutube } from 'react-icons/fa';
 import { UserIcon, BuildingOfficeIcon } from '@heroicons/react/24/outline';
 
 export default function Footer() {
@@ -49,7 +49,12 @@ export default function Footer() {
                 label="LinkedIn"
               />
               <SocialLink
-                href="mailto:icpc@sites.pdn.ac.lk"
+                href="https://www.youtube.com/@ICPCslk"
+                icon={<FaYoutube className="w-5 h-5" />}
+                label="YouTube"
+              />
+              <SocialLink
+                href="mailto:icpc@soc.pdn.ac.lk"
                 icon={<FaEnvelope className="w-5 h-5" />}
                 label="Email"
               />
@@ -82,7 +87,7 @@ export default function Footer() {
               <FooterLink href="/registration">Registration</FooterLink>
               <li>
                 <a
-                  href="https://icpc.global"
+                  href="https://icpc.global/regionals/finder/Asia-Peradeniya-2026"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-white hover:text-[#FDBC1D] transition-colors flex items-center gap-2 font-semibold text-sm sm:text-base group"
@@ -108,7 +113,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="mailto:icpc@sites.pdn.ac.lk"
+                  href="mailto:icpc@soc.pdn.ac.lk"
                   className="text-white hover:text-[#FDBC1D] transition-colors flex items-center gap-2 font-semibold text-sm sm:text-base group"
                 >
                   <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">

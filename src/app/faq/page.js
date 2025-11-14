@@ -97,7 +97,7 @@ export default function FAQ() {
         },
         {
           question: 'How will we know if we qualify for the World Finals?',
-          answer: 'Top-performing teams from the Sri Lanka Regional will qualify for the Asia West Finals. From there, the best teams advance to the ICPC World Finals.'
+          answer: 'The champion team from the Sri Lanka National Contest advances directly to the ICPC World Finals. Five runner-up teams will compete at the Asia West Regional, where top performers also advance to the World Finals.'
         }
       ]
     }
@@ -205,7 +205,7 @@ export default function FAQ() {
           </FadeIn>
           <ScaleIn delay={0.4}>
             <a
-              href="mailto:icpc@sites.pdn.ac.lk"
+              href="mailto:icpc@soc.pdn.ac.lk"
               className="inline-block bg-[#143C68] text-white px-8 sm:px-10 md:px-12 py-3 sm:py-4 rounded-xl sm:rounded-2xl text-base sm:text-lg md:text-xl font-bold hover:bg-[#1e4a7a] transition-all duration-300 hover:-translate-y-1 shadow-xl hover:shadow-2xl w-full sm:w-auto"
             >
               Contact Us

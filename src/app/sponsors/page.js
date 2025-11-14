@@ -118,7 +118,7 @@ export default function Sponsors() {
                   Partner with ICPC Sri Lanka 2026 and shape the future of technology in Sri Lanka.
                 </p>
                 <a
-                  href="mailto:icpc@sites.pdn.ac.lk"
+                  href="mailto:icpc@soc.pdn.ac.lk"
                   className="inline-block bg-[#143C68] text-white px-8 sm:px-12 py-3 sm:py-4 rounded-xl sm:rounded-2xl text-base sm:text-lg md:text-xl font-bold hover:bg-[#1e4a7a] transition-all duration-300 hover:-translate-y-1 shadow-xl hover:shadow-2xl"
                 >
                   Contact Us for Partnership

@@ -12,7 +12,10 @@
         "Form your team (3 students)",
         "Find a faculty coach",
         "Register online"
-      ]
+      ],
+      "registrationLink": "/registration",
+      "registrationText": "Proceed to Online Registration",
+      "registrationDisabled": false
     },
     {
       "id": "registrations-close",
@@ -40,7 +43,10 @@
         "Practice problems available",
         "Get familiar with contest platform",
         "Warm up with your team"
-      ]
+      ],
+      "registrationLink": "/registration",
+      "registrationText": "Proceed to Online Registration",
+      "registrationDisabled": false
     },
     {
       "id": "onsite-regional",
@@ -54,14 +60,18 @@
         "5-hour onsite competition",
         "Solve 5-10 programming problems",
         "Compete for national championship",
-        "Winners qualify for Asia West Regional"
-      ]
+        "Champion team advances to World Finals",
+        "Five runner-up teams qualify for Asia West Regional"
+      ],
+      "registrationLink": "/registration",
+      "registrationText": "Proceed to Onsite Registration",
+      "registrationDisabled": true
     },
     {
       "id": "asia-west-regional",
       "date": "March 2026",
       "title": "ICPC Asia West Regional",
-      "description": "The champion team from Sri Lanka will represent the country at the ICPC Asia West Regional Contest.",
+      "description": "Five runner-up teams from Sri Lanka will represent the country at the ICPC Asia West Regional Contest.",
       "icon": "FaGlobeAsia",
       "color": "bg-[#143C68]",
       "highlight": false,

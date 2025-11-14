@@ -81,22 +81,75 @@ export default function WhatIsICPCSection() {
                 we host our first-ever ICPC contest. This is your chance to be a pioneer.
               </p>
               
-              <div className="space-y-6">
-                <ModernPathStep 
-                  number="1" 
-                  text="Compete in Sri Lanka National Contest"
-                  icon={<FaTrophy className="w-6 h-6" />}
-                />
-                <ModernPathStep 
-                  number="2" 
-                  text="Advance to ICPC Asia West Regional"
-                  icon={<FaMedal className="w-6 h-6" />}
-                />
-                <ModernPathStep 
-                  number="3" 
-                  text="Qualify for ICPC World Finals"
-                  icon={<FaStar className="w-6 h-6" />}
-                />
+              <div className="space-y-4">
+                {/* Step 1: National Contest */}
+                <div className="bg-white/5 backdrop-blur-sm rounded-xl p-4 border border-white/10">
+                  <div className="flex items-center gap-3">
+                    <div className="flex-shrink-0 w-10 h-10 bg-[#FDBC1D] rounded-lg flex items-center justify-center">
+                      <span className="text-[#143C68] font-bold">1</span>
+                    </div>
+                    <div className="flex items-center gap-2 flex-1">
+                      <FaTrophy className="w-5 h-5 text-[#FDBC1D]" />
+                      <p className="text-base sm:text-lg font-semibold text-white">Compete in Sri Lanka National Contest</p>
+                    </div>
+                  </div>
+                </div>
+                
+                {/* Arrow Down */}
+                <div className="flex justify-center">
+                  <div className="w-0.5 h-6 bg-gradient-to-b from-[#FDBC1D] to-transparent"></div>
+                </div>
+                
+                {/* Step 2: Two Paths Branch */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 items-stretch">
+                  {/* Path A: Champion */}
+                  <div className="bg-gradient-to-br from-[#FDBC1D]/20 to-[#FDBC1D]/5 backdrop-blur-sm rounded-xl p-4 border-2 border-[#FDBC1D]/40 shadow-lg flex flex-col">
+                    <div className="flex flex-col items-center justify-center gap-2 text-center flex-grow">
+                      <div className="flex-shrink-0 w-8 h-8 bg-[#FDBC1D] rounded-lg flex items-center justify-center shadow-md">
+                        <FaStar className="w-4 h-4 text-[#143C68]" />
+                      </div>
+                      <div>
+                        <p className="font-bold text-[#FDBC1D] text-base sm:text-lg leading-tight">🏆 Champion Team</p>
+                        <p className="text-white/90 text-xs sm:text-sm">Direct qualification</p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  {/* Path B: Runner-ups */}
+                  <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4 border border-white/20 shadow-lg flex flex-col">
+                    <div className="flex flex-col items-center text-center mb-3">
+                      <div className="flex-shrink-0 w-8 h-8 bg-white/20 rounded-lg flex items-center justify-center mb-2">
+                        <FaMedal className="w-4 h-4 text-[#FDBC1D]" />
+                      </div>
+                      <div>
+                        <p className="font-bold text-white text-base sm:text-lg">🥈 Five Runner-Up Teams</p>
+                        <p className="text-white/80 text-xs sm:text-sm">Via regional contest</p>
+                      </div>
+                    </div>
+                    <div className="flex justify-center my-2">
+                      <div className="w-0.5 h-4 bg-white/30"></div>
+                    </div>
+                    <div className="bg-white/5 rounded-lg p-3 border border-white/10 text-center">
+                      <p className="text-white/90 font-medium text-sm sm:text-base">🌏 Asia West Regional</p>
+                    </div>
+                  </div>
+                </div>
+                
+                {/* Converging Arrows */}
+                <div className="flex justify-center items-start gap-8 sm:gap-12">
+                  <div className="w-0.5 h-8 bg-gradient-to-b from-[#FDBC1D] to-[#FDBC1D]/30"></div>
+                  <div className="w-0.5 h-8 bg-gradient-to-b from-white/40 to-white/10"></div>
+                </div>
+                
+                {/* Final Destination - World Finals */}
+                <div className="text-center">
+                  <div className="inline-block bg-gradient-to-r from-[#FDBC1D] to-[#e6a91a] rounded-2xl px-6 py-4 shadow-2xl border-2 border-[#FDBC1D]/50">
+                    <div className="flex items-center gap-3 justify-center">
+                      <FaTrophy className="w-6 h-6 text-[#143C68]" />
+                      <span className="text-[#143C68] text-lg sm:text-xl font-bold">World Finals</span>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </FadeInRight>

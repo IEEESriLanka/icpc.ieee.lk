@@ -16,10 +16,7 @@ export default function WhyJoinSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         <FadeIn>
           <div className="text-center mb-12 sm:mb-16 md:mb-24">
-            <div className="inline-flex items-center gap-2 sm:gap-3 bg-white/10 backdrop-blur-md border border-white/20 rounded-full px-4 sm:px-6 py-2 sm:py-3 mb-6 sm:mb-8">
-              <SparklesIcon className="w-6 h-6 text-[#FDBC1D]" />
-              <span className="text-white font-semibold">Transform Your Future</span>
-            </div>
+            
             <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 sm:mb-8 text-white">
               Why You Should Join?
             </h2>

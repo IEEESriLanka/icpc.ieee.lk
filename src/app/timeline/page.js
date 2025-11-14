@@ -56,6 +56,8 @@ export default function Timeline() {
                       'Find a faculty coach',
                       'Register online'
                     ]}
+                    registrationLink="/registration"
+                    registrationText="Proceed to Online Registration"
                   />
                 </StaggerItem>
 
@@ -86,6 +88,8 @@ export default function Timeline() {
                       'Get familiar with contest platform',
                       'Warm up with your team'
                     ]}
+                    registrationLink="/registration"
+                    registrationText="Proceed to Online Registration"
                   />
                 </StaggerItem>
 
@@ -101,8 +105,12 @@ export default function Timeline() {
                       '5-hour onsite competition',
                       'Solve 5-10 programming problems',
                       'Compete for national championship',
-                      'Winners qualify for Asia West Regional'
+                      'Champion team advances to World Finals',
+                      'Five runner-up teams qualify for Asia West Regional'
                     ]}
+                    registrationLink="/registration"
+                    registrationText="Proceed to Onsite Registration"
+                    registrationDisabled={true}
                   />
                 </StaggerItem>
 
@@ -110,7 +118,7 @@ export default function Timeline() {
                   <TimelineEvent
                     date="March 2026"
                     title="ICPC Asia West Regional"
-                    description="The champion team from Sri Lanka will represent the country at the ICPC Asia West Regional Contest."
+                    description="Five runner-up teams from Sri Lanka will represent the country at the ICPC Asia West Regional Contest."
                     icon={<FaGlobeAsia className="w-8 h-8" />}
                     color="bg-[#143C68]"
                     actions={[
@@ -189,7 +197,7 @@ export default function Timeline() {
   );
 }
 
-function TimelineEvent({ date, title, description, icon, color, highlight, actions }) {
+function TimelineEvent({ date, title, description, icon, color, highlight, actions, registrationLink, registrationText, registrationDisabled }) {
   return (
     <div className="relative pl-12 sm:pl-16 md:pl-20 lg:pl-24">
       {/* Icon Circle */}
@@ -204,7 +212,7 @@ function TimelineEvent({ date, title, description, icon, color, highlight, actio
         <p className={`${highlight ? 'text-[#143C68]' : 'text-gray-700'} mb-6 sm:mb-8 text-base sm:text-lg leading-relaxed`}>{description}</p>
         
         {actions && actions.length > 0 && (
-          <ul className="space-y-3 sm:space-y-4">
+          <ul className="space-y-3 sm:space-y-4 mb-6">
             {actions.map((action, actionIndex) => (
               <li key={`${title}-${actionIndex}`} className={`flex items-start space-x-2 sm:space-x-3 md:space-x-4 ${highlight ? 'text-[#143C68]' : 'text-gray-700'}`}>
                 <svg className="w-5 h-5 sm:w-6 sm:h-6 text-[#FDBC1D] flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
@@ -214,6 +222,33 @@ function TimelineEvent({ date, title, description, icon, color, highlight, actio
               </li>
             ))}
           </ul>
+        )}
+
+        {/* Registration Button */}
+        {registrationLink && (
+          <div className="mt-6 pt-6 border-t-2 border-gray-200">
+            {registrationDisabled ? (
+              <button
+                disabled
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-gray-400 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-xl sm:rounded-2xl text-base sm:text-lg font-bold cursor-not-allowed opacity-60"
+              >
+                {registrationText}
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+              </button>
+            ) : (
+              <Link
+                href={registrationLink}
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-[#143C68] text-white px-6 sm:px-8 py-3 sm:py-4 rounded-xl sm:rounded-2xl text-base sm:text-lg font-bold hover:bg-[#1e4a7a] transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1"
+              >
+                {registrationText}
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+              </Link>
+            )}
+          </div>
         )}
       </div>
     </div>

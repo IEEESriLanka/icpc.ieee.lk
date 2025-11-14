@@ -22,7 +22,8 @@ import {
   FaLightbulb,
   FaCheckCircle,
   FaFacebook,
-  FaLinkedin
+  FaLinkedin,
+  FaYoutube
 } from 'react-icons/fa';
 import { FadeIn, ScaleIn, StaggerContainer, StaggerItem } from '@/components/AnimatedSection';
 
@@ -213,7 +214,16 @@ export default function Registration() {
                 <span>LinkedIn</span>
               </a>
               <a
-                href="mailto:icpc@sites.pdn.ac.lk"
+                href="https://www.youtube.com/@ICPCslk"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-3 bg-[#FF0000] text-white px-6 py-3 rounded-xl font-bold hover:bg-[#cc0000] transition-all duration-300 shadow-lg hover:shadow-2xl transform hover:scale-105"
+              >
+                <FaYoutube className="w-6 h-6" />
+                <span>YouTube</span>
+              </a>
+              <a
+                href="mailto:icpc@soc.pdn.ac.lk"
                 className="flex items-center gap-3 bg-white text-[#143C68] px-6 py-3 rounded-xl font-bold hover:bg-[#FDBC1D] hover:text-[#143C68] transition-all duration-300 shadow-lg hover:shadow-2xl transform hover:scale-105"
               >
                 <FaEnvelope className="w-6 h-6" />
@@ -476,7 +486,7 @@ function RegisterGloballyCard() {
       </ul>
 
           <a
-        href="https://icpc.global"
+        href="https://icpc.global/regionals/finder/Asia-Peradeniya-2026"
             target="_blank"
             rel="noopener noreferrer"
         className="w-full sm:w-auto inline-block bg-[#143C68] text-white px-6 sm:px-8 py-2 sm:py-3 rounded-xl sm:rounded-2xl font-bold text-base sm:text-lg hover:bg-[#1e4a7a] transition-all duration-300 hover:-translate-y-1 shadow-xl hover:shadow-2xl text-center"
