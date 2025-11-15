@@ -78,12 +78,12 @@ export default function About() {
                   <PathItem 
                     step="1" 
                     title="Sri Lanka National Contest" 
-                    description="Compete against the best teams in Sri Lanka. The champion team advances directly to ICPC World Finals. Five runner-up teams advance to ICPC Asia West Regional."
+                    description="Compete against the best teams in Sri Lanka. The champion team advances directly to ICPC World Finals. Four runner-up teams advance to ICPC Asia West Regional."
                   />
                   <PathItem 
                     step="2" 
                     title="ICPC Asia West Regional" 
-                    description="Five runner-up teams from the national contest represent Sri Lanka on the regional stage. Top teams from this regional advance to ICPC World Finals."
+                    description="Four runner-up teams from the national contest represent Sri Lanka on the regional stage. Top teams from this regional advance to ICPC World Finals."
                   />
                   <PathItem 
                     step="3" 

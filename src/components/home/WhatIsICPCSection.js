@@ -122,7 +122,7 @@ export default function WhatIsICPCSection() {
                         <FaMedal className="w-4 h-4 text-[#FDBC1D]" />
                       </div>
                       <div>
-                        <p className="font-bold text-white text-base sm:text-lg">🥈 Five Runner-Up Teams</p>
+                        <p className="font-bold text-white text-base sm:text-lg">🥈 Four Runner-Up Teams</p>
                         <p className="text-white/80 text-xs sm:text-sm">Via regional contest</p>
                       </div>
                     </div>
