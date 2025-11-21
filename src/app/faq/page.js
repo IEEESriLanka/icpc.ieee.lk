@@ -17,7 +17,7 @@ export default function FAQ() {
         },
         {
           question: 'How much is the registration fee?',
-          answer: 'There is no registration fee for the Preliminary Online Round. For the Regional Onsite Round, the registration fee is LKR 2,000 per team. This fee includes meals and logistics on the day of the contest.'
+          answer: 'There is no registration fee for the Preliminary Online Round. For the Regional Onsite Round, the registration fee is LKR 2,000 per team for Sri Lankan teams and USD 300 per team for International teams. This fee includes meals and logistics on the day of the contest.'
         },
         {
           question: 'Can we register multiple teams from the same university?',

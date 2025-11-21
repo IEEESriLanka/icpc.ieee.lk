@@ -121,7 +121,8 @@ export default function Registration() {
                 icon={<FaMoneyBill className="w-8 h-8" />}
                 title="Registration Fee"
                 items={[
-                  'LKR 2,000 per team (Onsite Round)',
+                  'For Sri Lankan Teams - LKR 2,000 per team (Onsite Round)',
+                  'For International Teams - USD 300 per team (Onsite Round)',
                   'Covers meals on contest day',
                   'Covers event logistics',
                 ]}
@@ -362,6 +363,10 @@ function PreliminaryRegistrationContent() {
           icon={<FaMoneyBill className="w-6 h-6" />}
           text="No registration fee is required for the online round."
         />
+        <RegistrationInfoPoint
+          icon={<FaMoneyBill className="w-6 h-6" />}
+          text="IEEE Membership is not required."
+        />
       </div>
       
       <div className="pt-6 sm:pt-8 border-t-2 border-gray-200">
@@ -525,7 +530,7 @@ function RegionalRegistrationContent() {
         />
         <RegistrationInfoPoint
           icon={<FaMoneyBill className="w-6 h-6" />}
-          text="Teams are required to pay the registration fee of LKR 2,000 to confirm participation."
+          text="Teams are required to pay the registration fee (LKR 2,000 for Sri Lankan teams, USD 300 for International teams) to confirm participation."
         />
         <RegistrationInfoPoint
           icon={<FaEnvelope className="w-6 h-6" />}
@@ -561,7 +566,7 @@ function PayRegistrationFeeCard() {
       
       <ul className="space-y-3 sm:space-y-4 mb-6 sm:mb-8">
         {[
-          'Registration fee: LKR 2,000 per team',
+          'Registration fee: LKR 2,000 for Sri Lankan teams, USD 300 for International teams',
           'Fee covers meals and logistics on contest day',
           'Payment instructions will be provided after registration',
           'Secure your spot early!'

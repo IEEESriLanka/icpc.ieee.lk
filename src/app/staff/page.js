@@ -70,7 +70,7 @@ const staffMembers = [
     url: null
   },
   {
-    name: "Ms. Rashmi Virajitha",
+    name: "Mr. Rashmi Virajitha",
     position: "Volunteer Chair",
     url: null
   }

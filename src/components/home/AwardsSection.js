@@ -88,36 +88,54 @@ export default function AwardsSection() {
           </div>
         </StaggerContainer>
 
-        {/* Important Notice - One Award Per Institution */}
+        {/* Award Distribution Policy */}
         <FadeIn delay={0.3}>
-          <div className="bg-gray-50 rounded-xl sm:rounded-2xl p-6 sm:p-8 shadow-lg mb-12 border border-gray-200">
+          <div className="bg-gradient-to-br from-[#143C68]/5 to-[#FDBC1D]/5 rounded-xl sm:rounded-2xl p-6 sm:p-8 shadow-lg mb-12 border-2 border-[#143C68]/20">
             <div className="flex items-start gap-4">
-              <div className="flex-shrink-0 w-10 h-10 bg-[#143C68]/10 rounded-lg flex items-center justify-center">
-                <FaUniversity className="w-5 h-5 text-[#143C68]" />
+              <div className="flex-shrink-0 w-12 h-12 bg-[#143C68] rounded-lg flex items-center justify-center">
+                <FaUniversity className="w-6 h-6 text-[#FDBC1D]" />
               </div>
               <div className="flex-1">
-                <h3 className="text-lg sm:text-xl font-bold text-[#143C68] mb-3">
+                <h3 className="text-xl sm:text-2xl font-bold text-[#143C68] mb-4">
                   Award Distribution Policy
                 </h3>
-                <p className="text-gray-700 text-base sm:text-lg leading-relaxed mb-2">
-                  <strong className="text-[#143C68]">Only one award per institution</strong> - This means a maximum of six teams from six different universities will receive awards.
+                <p className="text-gray-700 text-base sm:text-lg leading-relaxed mb-4">
+                  <strong className="text-[#143C68]">Champion and four runner-up teams will be recognized.</strong>
                 </p>
-                <p className="text-gray-600 text-sm sm:text-base">
-                  This policy ensures fair distribution of recognition across universities and encourages participation from diverse institutions throughout Sri Lanka.
+                <p className="text-gray-700 text-base sm:text-lg leading-relaxed mb-3">
+                  Allowed for awards and selections:
                 </p>
+                <ul className="space-y-3">
+                  <li className="flex items-start gap-3">
+                    <div className="flex-shrink-0 w-6 h-6 bg-[#143C68] rounded-full flex items-center justify-center mt-0.5">
+                      <span className="text-[#FDBC1D] font-bold text-sm">1</span>
+                    </div>
+                    <p className="text-gray-700 text-base sm:text-lg flex-1">
+                      No additional teams from the Champion Team&apos;s university
+                    </p>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <div className="flex-shrink-0 w-6 h-6 bg-[#FDBC1D] rounded-full flex items-center justify-center mt-0.5">
+                      <span className="text-[#143C68] font-bold text-sm">2</span>
+                    </div>
+                    <p className="text-gray-700 text-base sm:text-lg flex-1">
+                      Four runner-up slots allocated by performance, any university
+                    </p>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
         </FadeIn>
 
-        {/* Travel & Accommodation */}
+        {/* Accommodations and Subsistence */}
         <FadeIn delay={0.4}>
           <div className="bg-white rounded-2xl sm:rounded-3xl p-6 sm:p-8 md:p-10 shadow-2xl border-2 border-[#FDBC1D]/20">
             <div className="text-center mb-8">
               <div className="inline-flex items-center gap-3 mb-4">
                 <FaHotel className="w-8 h-8 text-[#143C68]" />
                 <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#143C68]">
-                  Travel & Accommodation Support
+                  Accommodations and Subsistence
                 </h3>
               </div>
             </div>
@@ -131,7 +149,7 @@ export default function AwardsSection() {
                   <div>
                     <h4 className="text-xl font-bold text-[#143C68] mb-2">Asia West Regional</h4>
                     <p className="text-gray-700 text-base">
-                      Teams advancing to the Asia West Regional will have their <strong>accommodations covered</strong>
+                      Teams advancing to the Asia West Regional will have their <strong>accommodations and subsistence covered</strong>
                     </p>
                   </div>
                 </div>
@@ -145,7 +163,7 @@ export default function AwardsSection() {
                   <div>
                     <h4 className="text-xl font-bold text-[#143C68] mb-2">World Finals</h4>
                     <p className="text-gray-700 text-base">
-                      Teams qualifying for World Finals will have their <strong>accommodations covered</strong>
+                      Teams qualifying for World Finals will have their <strong>accommodations and subsistence covered</strong>
                     </p>
                   </div>
                 </div>
@@ -154,7 +172,7 @@ export default function AwardsSection() {
 
             <div className="mt-6 p-4 bg-gray-50 rounded-xl border border-gray-200">
               <p className="text-gray-600 text-sm sm:text-base text-center">
-                <strong className="text-[#143C68]">Note:</strong> This includes lodging and meals for team members advancing to regional and world finals competitions
+                <strong className="text-[#143C68]">Note:</strong> Accommodations and subsistence include lodging and meals for team members advancing to regional and world finals competitions
               </p>
             </div>
           </div>

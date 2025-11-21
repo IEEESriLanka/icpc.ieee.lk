@@ -144,7 +144,7 @@ export default function StructuredData() {
         "name": "What is the registration fee?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "The registration fee for the Regional Onsite Round is LKR 2,000 per team. There is no fee for the Preliminary Online Round."
+          "text": "The registration fee for the Regional Onsite Round is LKR 2,000 per team for Sri Lankan teams and USD 300 per team for International teams. There is no fee for the Preliminary Online Round."
         }
       },
       {
