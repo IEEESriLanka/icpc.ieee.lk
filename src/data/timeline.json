@@ -19,7 +19,7 @@
     },
     {
       "id": "registrations-close",
-      "date": "10th December 2025",
+      "date": "30th December 2025",
       "title": "Registrations Close",
       "description": "Registration deadline for teams. Make sure to complete your registration before this date to secure your spot in the competition.",
       "icon": "FaCheckCircle",
@@ -33,7 +33,7 @@
     },
     {
       "id": "online-round",
-      "date": "December 14th 2025",
+      "date": "4th January 2026",
       "title": "Online Round",
       "description": "An online preliminary round to help teams prepare and get familiar with the contest format.",
       "icon": "FaLaptopCode",
@@ -50,7 +50,7 @@
     },
     {
       "id": "onsite-regional",
-      "date": "04th January 2026",
+      "date": "25th January 2026",
       "title": "Sri Lanka Onsite Regional",
       "description": "The main national contest held onsite. This is where history will be made as Sri Lanka hosts its first-ever ICPC contest!",
       "icon": "FaTrophy",

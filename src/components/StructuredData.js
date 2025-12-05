@@ -35,8 +35,8 @@ export default function StructuredData() {
     "@type": "Event",
     "name": "ICPC Sri Lanka 2026 National Contest",
     "description": "Sri Lanka's first International Collegiate Programming Contest - the world's most prestigious programming competition",
-    "startDate": "2026-01-04",
-    "endDate": "2026-01-04",
+    "startDate": "2026-01-25",
+    "endDate": "2026-01-25",
     "eventStatus": "https://schema.org/EventScheduled",
     "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
     "location": {
