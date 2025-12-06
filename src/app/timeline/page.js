@@ -63,7 +63,7 @@ export default function Timeline() {
 
                 <StaggerItem>
                   <TimelineEvent
-                    date="10th December 2025"
+                    date="30th December 2025"
                     title="Registrations Close"
                     description="Registration deadline for teams. Make sure to complete your registration before this date to secure your spot in the competition."
                     icon={<FaCheckCircle className="w-8 h-8" />}
@@ -78,7 +78,7 @@ export default function Timeline() {
 
                 <StaggerItem>
                   <TimelineEvent
-                    date="December 14th 2025"
+                    date="4th January 2026"
                     title="Preliminary Online Round"
                     description="An online preliminary round to help teams prepare and get familiar with the contest format."
                     icon={<FaLaptopCode className="w-8 h-8" />}
@@ -95,7 +95,7 @@ export default function Timeline() {
 
                 <StaggerItem>
                   <TimelineEvent
-                    date="04th January 2026"
+                    date="25th January 2026"
                     title="Sri Lanka Onsite Regional"
                     description="The main national contest held onsite. This is where history will be made as Sri Lanka hosts its first-ever ICPC contest!"
                     icon={<FaTrophy className="w-8 h-8" />}
@@ -160,9 +160,9 @@ export default function Timeline() {
             <div className="bg-[#FDBC1D] rounded-2xl sm:rounded-3xl p-6 sm:p-8 md:p-12 shadow-2xl">
               <div className="space-y-4 sm:space-y-6">
                 <QuickDate date="11th November 2025" event="Registrations Open" />
-                <QuickDate date="10th December 2025" event="Registrations Close" />
-                <QuickDate date="December 14th 2025" event="Preliminary Online Round" />
-                <QuickDate date="04th January 2026" event="Sri Lanka Onsite Regional" highlight={true} />
+                <QuickDate date="30th December 2025" event="Registrations Close" />
+                <QuickDate date="4th January 2026" event="Preliminary Online Round" />
+                <QuickDate date="25th January 2026" event="Sri Lanka Onsite Regional" highlight={true} />
                 <QuickDate date="March 2026" event="ICPC Asia West" />
                 <QuickDate date="August 2026" event="ICPC World Finals" />
               </div>

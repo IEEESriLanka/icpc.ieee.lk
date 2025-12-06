@@ -29,7 +29,7 @@ export default function TimelineSection() {
             </FadeInLeft>
             <FadeInRight delay={0.2}>
               <TimelineCard
-                date="10th December 2025"
+                date="30th December 2025"
                 title="Registrations Close"
                 align="right"
                 color="bg-[#143C68]"
@@ -37,7 +37,7 @@ export default function TimelineSection() {
             </FadeInRight>
             <FadeInLeft delay={0.3}>
               <TimelineCard
-                date="December 14th 2025"
+                date="4th January 2026"
                 title="Online Round"
                 align="left"
                 color="bg-[#143C68]"
@@ -45,7 +45,7 @@ export default function TimelineSection() {
             </FadeInLeft>
             <FadeInRight delay={0.4}>
               <TimelineCard
-                date="04th January 2026"
+                date="25th January 2026"
                 title="Sri Lanka Onsite Regional"
                 align="right"
                 color="bg-[#FDBC1D]"
