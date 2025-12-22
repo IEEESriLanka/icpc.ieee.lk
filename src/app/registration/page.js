@@ -163,12 +163,30 @@ export default function Registration() {
               <InfoItem
                 icon={<FaMapMarkerAlt className="w-6 h-6" />}
                 title="Contest Location"
-                content="To be announced (Major city in Sri Lanka)"
+                content="University of Peradeniya, Sri Lanka."
               />
               <InfoItem
                 icon={<FaEnvelope className="w-6 h-6" />}
                 title="Contact"
                 content="For questions, contact ICPC Sri Lanka organizing committee"
+              />
+              <InfoItem
+                icon={<FaFileAlt className="w-6 h-6" />}
+                title="Team Reference Document (TRD)"
+                content={
+                  <>
+                    Click{' '}
+                    <a
+                      href="https://drive.google.com/file/d/1HvHcxytX4ZLKvcU25Nfck1G4LXVVEEHL/view?usp=sharing"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-[#143C68] font-bold underline hover:text-[#FDBC1D] transition-colors"
+                    >
+                      here
+                    </a>
+                    {' '}to view the Team Reference Document (TRD) guidelines
+                  </>
+                }
               />
             </div>
           </ScaleIn>

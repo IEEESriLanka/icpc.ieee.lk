@@ -59,11 +59,24 @@ export default function FAQ() {
         },
         {
           question: 'Can we bring reference materials?',
-          answer: 'Yes! Teams can bring printed reference materials (books, notes, etc.). However, no electronic devices except the provided computer are allowed.'
+          answer: (
+            <>
+              Teams can bring printed{' '}
+              <a
+                href="https://drive.google.com/file/d/1HvHcxytX4ZLKvcU25Nfck1G4LXVVEEHL/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#143C68] font-bold underline hover:text-[#FDBC1D] transition-colors"
+              >
+                Team Reference Document (TRD)
+              </a>
+              {' '}to refer, with the maximum limit of 25 pages. However, no electronic devices except the provided computer are allowed.
+            </>
+          )
         },
         {
           question: 'Where will the contest be held?',
-          answer: 'The contest location will be announced closer to the event date. It will be held in University of Peradeniya.'
+          answer: 'University of Peradeniya, Sri Lanka.'
         }
       ]
     },
