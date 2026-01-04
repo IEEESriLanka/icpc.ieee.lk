@@ -30,7 +30,7 @@ export default function CTASection() {
         
         <FadeIn delay={0.4}>
           <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-[#143C68] mb-12 sm:mb-16 max-w-4xl mx-auto font-semibold leading-relaxed px-4">
-            Join ICPC Sri Lanka 2026 and represent your country on the world&apos;s biggest programming stage
+            Join ICPC Sri Lanka 2025/2026 and represent your country on the world&apos;s biggest programming stage
           </p>
         </FadeIn>
         

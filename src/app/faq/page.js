@@ -13,7 +13,7 @@ export default function FAQ() {
       questions: [
         {
           question: 'When does registration open?',
-          answer: 'Registration for ICPC Sri Lanka 2026 opens in November 2025. Make sure to register early as spots are limited!'
+          answer: 'Registration for ICPC Sri Lanka 2025/2026 opens in November 2025. Make sure to register early as spots are limited!'
         },
         {
           question: 'How much is the registration fee?',
@@ -139,7 +139,7 @@ export default function FAQ() {
             </h1>
             <div className="h-2 w-24 sm:w-32 bg-[#FDBC1D] mx-auto mb-8 sm:mb-10 rounded-full"></div>
             <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-[#FDBC1D] font-semibold max-w-4xl mx-auto px-4">
-              Find answers to common questions about ICPC Sri Lanka 2026
+              Find answers to common questions about ICPC Sri Lanka 2025/2026
             </p>
           </div>
         </section>

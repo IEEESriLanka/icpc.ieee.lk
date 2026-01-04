@@ -1,11 +1,13 @@
 'use client';
 
-import { 
-  FaUsers, 
-  FaTrophy, 
-  FaBuilding, 
-  FaGlobe, 
-  FaLightbulb
+import {
+  FaUsers,
+  FaTrophy,
+  FaBuilding,
+  FaGlobe,
+  FaLightbulb,
+  FaFacebook,
+  FaLinkedin
 } from 'react-icons/fa';
 import { FadeIn, StaggerContainer, StaggerItem } from '@/components/AnimatedSection';
 
@@ -52,7 +54,7 @@ export default function Sponsors() {
             <FadeIn delay={0.2}>
               <div className="mb-12 sm:mb-16">
                 <h4 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#143C68] mb-4 sm:mb-6 text-center px-4">
-                  Why Sponsor ICPC Sri Lanka 2026?
+                  Why Sponsor ICPC Sri Lanka 2025/2026?
                 </h4>
                 <p className="text-base sm:text-lg md:text-xl text-gray-700 leading-relaxed text-center max-w-4xl mx-auto px-4">
                   ICPC Sri Lanka is the premier programming competition in the country, attracting the brightest minds from top universities. 
@@ -111,11 +113,33 @@ export default function Sponsors() {
               </div>
             </FadeIn>
 
+            {/* Our Sponsors Section */}
+            <FadeIn delay={0.4}>
+              <div className="mb-12 sm:mb-16 pt-8 sm:pt-12 border-t-2 border-gray-200">
+                <h4 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#143C68] mb-8 sm:mb-12 text-center px-4">
+                  Our Sponsors
+                </h4>
+                <div className="h-1 w-16 sm:w-20 bg-[#FDBC1D] mx-auto mb-8 sm:mb-12 rounded-full"></div>
+
+                {/* Silver Sponsors */}
+                <div className="mb-8">
+                  <h5 className="text-xl sm:text-2xl font-bold text-gray-600 mb-6 text-center">Silver Sponsors</h5>
+                  <div className="flex flex-wrap justify-center gap-6 sm:gap-8">
+                    <SponsorCard
+                      name="IESL - Young Member's Section - YMS"
+                      facebook="https://www.facebook.com/ieslyms"
+                      linkedin="https://www.linkedin.com/company/ieslyms"
+                    />
+                  </div>
+                </div>
+              </div>
+            </FadeIn>
+
             {/* CTA Section */}
             <FadeIn delay={0.5}>
               <div className="text-center pt-6 sm:pt-8 border-t-2 border-gray-200">
                 <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-[#143C68] mb-6 sm:mb-8 px-4">
-                  Partner with ICPC Sri Lanka 2026 and shape the future of technology in Sri Lanka.
+                  Partner with ICPC Sri Lanka 2025/2026 and shape the future of technology in Sri Lanka.
                 </p>
                 <a
                   href="mailto:icpc@soc.pdn.ac.lk"
@@ -143,6 +167,38 @@ function BenefitCard({ icon, title, description }) {
           <h5 className="text-xl sm:text-2xl font-bold text-[#143C68] mb-2 sm:mb-3">{title}</h5>
           <p className="text-base sm:text-lg text-gray-700 leading-relaxed">{description}</p>
         </div>
+      </div>
+    </div>
+  );
+}
+
+function SponsorCard({ name, facebook, linkedin }) {
+  return (
+    <div className="bg-white border-2 border-gray-200 rounded-xl sm:rounded-2xl p-6 sm:p-8 hover:shadow-xl hover:border-[#FDBC1D] transition-all duration-300 hover:-translate-y-2 w-full sm:w-auto sm:min-w-[300px]">
+      <h6 className="text-xl sm:text-2xl font-bold text-[#143C68] mb-4 text-center">{name}</h6>
+      <div className="flex justify-center gap-4">
+        {facebook && (
+          <a
+            href={facebook}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center justify-center w-12 h-12 bg-[#1877F2] text-white rounded-full hover:bg-[#145dbf] transition-all duration-300 hover:scale-110 shadow-lg"
+            aria-label={`${name} on Facebook`}
+          >
+            <FaFacebook className="w-6 h-6" />
+          </a>
+        )}
+        {linkedin && (
+          <a
+            href={linkedin}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center justify-center w-12 h-12 bg-[#0A66C2] text-white rounded-full hover:bg-[#084d94] transition-all duration-300 hover:scale-110 shadow-lg"
+            aria-label={`${name} on LinkedIn`}
+          >
+            <FaLinkedin className="w-6 h-6" />
+          </a>
+        )}
       </div>
     </div>
   );

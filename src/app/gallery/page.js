@@ -164,7 +164,7 @@ export default function Gallery() {
       <FadeIn>
         <section className="py-12 sm:py-16 md:py-24 bg-[#FDBC1D]">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#143C68] mb-6 sm:mb-8 px-4">Be Part of ICPC Sri Lanka 2026</h2>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#143C68] mb-6 sm:mb-8 px-4">Be Part of ICPC Sri Lanka 2025/2026</h2>
             <p className="text-lg sm:text-xl md:text-2xl text-[#143C68] mb-8 sm:mb-10 md:mb-12 font-semibold px-4">
               Create your own memories at Sri Lanka&apos;s first ICPC competition
             </p>

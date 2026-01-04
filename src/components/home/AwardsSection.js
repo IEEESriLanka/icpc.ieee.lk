@@ -119,7 +119,7 @@ export default function AwardsSection() {
                       <span className="text-[#143C68] font-bold text-sm">2</span>
                     </div>
                     <p className="text-gray-700 text-base sm:text-lg flex-1">
-                      Four runner-up slots allocated by performance, any university
+                      Four runner-up slots allocated by performance, maximum 2 teams per university
                     </p>
                   </li>
                 </ul>

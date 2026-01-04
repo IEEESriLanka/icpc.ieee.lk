@@ -33,7 +33,7 @@ export default function StructuredData() {
   const eventSchema = {
     "@context": "https://schema.org",
     "@type": "Event",
-    "name": "ICPC Sri Lanka 2026 National Contest",
+    "name": "ICPC Sri Lanka 2025/2026 National Contest",
     "description": "Sri Lanka's first International Collegiate Programming Contest - the world's most prestigious programming competition",
     "startDate": "2026-01-25",
     "endDate": "2026-01-25",
@@ -74,10 +74,10 @@ export default function StructuredData() {
   const websiteSchema = {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    "name": "ICPC Sri Lanka 2026",
+    "name": "ICPC Sri Lanka 2025/2026",
     "alternateName": "ICPC SL",
     "url": "https://icpc.ieee.lk",
-    "description": "Official website for ICPC Sri Lanka 2026 - Code Beyond Borders",
+    "description": "Official website for ICPC Sri Lanka 2025/2026 - Code Beyond Borders",
     "potentialAction": {
       "@type": "SearchAction",
       "target": {
@@ -128,7 +128,7 @@ export default function StructuredData() {
         "name": "When does registration open?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Registration for ICPC Sri Lanka 2026 opens on 11th November 2025."
+          "text": "Registration for ICPC Sri Lanka 2025/2026 opens on 11th November 2025."
         }
       },
       {

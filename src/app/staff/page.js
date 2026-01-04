@@ -95,7 +95,7 @@ export default function StaffPage() {
             </h1>
             <div className="h-2 w-24 sm:w-32 bg-[#FDBC1D] mx-auto mb-6 sm:mb-8 rounded-full"></div>
             <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl text-center max-w-4xl mx-auto font-bold text-[#FDBC1D] px-4">
-              Meet the dedicated team behind <br /> ICPC Sri Lanka 2026
+              Meet the dedicated team behind <br /> ICPC Sri Lanka 2025/2026
             </p>
           </FadeInUp>
         </div>
@@ -106,7 +106,7 @@ export default function StaffPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <FadeInUp>
             <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-700 leading-relaxed font-semibold px-4">
-              The success of ICPC Sri Lanka 2026 is made possible by our dedicated organizing committee—a team of passionate professionals, educators, and volunteers working together to bring this historic event to life.
+              The success of ICPC Sri Lanka 2025/2026 is made possible by our dedicated organizing committee—a team of passionate professionals, educators, and volunteers working together to bring this historic event to life.
             </p>
           </FadeInUp>
         </div>

@@ -22,7 +22,7 @@ export default function AwarenessSessionSection() {
             </div>
 
             <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 sm:mb-8">
-              ICPC Sri Lanka 2026
+              ICPC Sri Lanka 2025/2026
             </h2>
             <h3 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#FDBC1D] mb-6 sm:mb-8">
               Awareness Session
@@ -36,7 +36,7 @@ export default function AwarenessSessionSection() {
 
             <p className="text-lg sm:text-xl md:text-2xl text-white/90 max-w-4xl mx-auto leading-relaxed font-medium">
               From forming your team of three to mastering the registration guidelines,
-              this session is your <span className="text-[#FDBC1D] font-bold">ultimate guide to ICPC Sri Lanka 2026</span>.
+              this session is your <span className="text-[#FDBC1D] font-bold">ultimate guide to ICPC Sri Lanka 2025/2026</span>.
               We walk you through the timeline, the mission, and the critical rules you must follow
               to qualify for the onsite regionals.
               <span className="text-[#FDBC1D] font-bold"> Get the details. Register your team. Make history!</span>
@@ -52,7 +52,7 @@ export default function AwarenessSessionSection() {
                 width="100%"
                 height="100%"
                 src="https://www.youtube.com/embed/3Vmr0nfBACk"
-                title="ICPC Sri Lanka 2026 Awareness Session | How to Compete in the World's Biggest Programming Contest"
+                title="ICPC Sri Lanka 2025/2026 Awareness Session | How to Compete in the World's Biggest Programming Contest"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowFullScreen
