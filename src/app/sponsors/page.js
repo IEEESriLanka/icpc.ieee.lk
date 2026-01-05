@@ -127,10 +127,34 @@ export default function Sponsors() {
                   <div className="flex flex-wrap justify-center gap-6 sm:gap-8">
                     <SponsorCard
                       name="IESL - Young Member's Section - YMS"
+                      logo="/IESL-YMS.jpeg"
                       facebook="https://www.facebook.com/ieslyms"
                       linkedin="https://www.linkedin.com/company/ieslyms"
                     />
                   </div>
+                </div>
+              </div>
+            </FadeIn>
+
+            {/* Supported By Section */}
+            <FadeIn delay={0.45}>
+              <div className="mb-12 sm:mb-16 pt-8 sm:pt-12 border-t-2 border-gray-200">
+                <h4 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#143C68] mb-8 sm:mb-12 text-center px-4">
+                  Supported by
+                </h4>
+                <div className="h-1 w-16 sm:w-20 bg-[#FDBC1D] mx-auto mb-8 sm:mb-12 rounded-full"></div>
+
+                <div className="flex flex-wrap justify-center gap-8 sm:gap-12">
+                  <SupporterCard
+                    name="Information Technology Center, University of Peradeniya"
+                    logo="/ceit.png"
+                    website="https://www.ceit.pdn.ac.lk"
+                  />
+                  <SupporterCard
+                    name="Young Members Section (YMS)"
+                    logo="/IESL-YMS.jpeg"
+                    website="https://iesl.lk/index.php?option=com_chapters&view=committee_members&stdcom=181&Itemid=224&lang=en"
+                  />
                 </div>
               </div>
             </FadeIn>
@@ -172,9 +196,18 @@ function BenefitCard({ icon, title, description }) {
   );
 }
 
-function SponsorCard({ name, facebook, linkedin }) {
+function SponsorCard({ name, logo, facebook, linkedin }) {
   return (
     <div className="bg-white border-2 border-gray-200 rounded-xl sm:rounded-2xl p-6 sm:p-8 hover:shadow-xl hover:border-[#FDBC1D] transition-all duration-300 hover:-translate-y-2 w-full sm:w-auto sm:min-w-[300px]">
+      {logo && (
+        <div className="flex justify-center mb-6">
+          <img
+            src={logo}
+            alt={name}
+            className="h-24 sm:h-32 w-auto object-contain"
+          />
+        </div>
+      )}
       <h6 className="text-xl sm:text-2xl font-bold text-[#143C68] mb-4 text-center">{name}</h6>
       <div className="flex justify-center gap-4">
         {facebook && (
@@ -201,6 +234,28 @@ function SponsorCard({ name, facebook, linkedin }) {
         )}
       </div>
     </div>
+  );
+}
+
+function SupporterCard({ name, logo, website }) {
+  return (
+    <a
+      href={website}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="bg-white border-2 border-gray-200 rounded-xl sm:rounded-2xl p-6 sm:p-8 hover:shadow-xl hover:border-[#143C68] transition-all duration-300 hover:-translate-y-2 w-full sm:w-auto sm:max-w-[280px] group"
+    >
+      <div className="flex justify-center mb-4">
+        <img
+          src={logo}
+          alt={name}
+          className="h-20 sm:h-24 w-auto object-contain"
+        />
+      </div>
+      <h6 className="text-base sm:text-lg font-bold text-[#143C68] text-center group-hover:text-[#FDBC1D] transition-colors">
+        {name}
+      </h6>
+    </a>
   );
 }
 
