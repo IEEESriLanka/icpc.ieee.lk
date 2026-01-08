@@ -75,7 +75,7 @@ export default function SelectionRules() {
                 </div>
                 <div className="space-y-4 text-base sm:text-lg text-gray-700 leading-relaxed">
                   <p>
-                    A maximum of <span className="font-bold text-[#143C68]">N teams per university</span> (where N ≈ 7) may be invited to the onsite round. The final value of N will be announced before onsite selection begins.
+                    A maximum of <span className="font-bold text-[#143C68]">N teams per university</span> (where N ≈ 4) may be invited to the onsite round. The final value of N will be announced before onsite selection begins.
                   </p>
                   <p className="font-semibold">If more than N teams from the same university fall within the cutoff:</p>
                   <ul className="space-y-2 ml-6">

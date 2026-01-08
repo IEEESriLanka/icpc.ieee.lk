@@ -25,7 +25,7 @@ export default function Navbar() {
             </div>
             <div className="flex flex-col">
               <span className="text-xl sm:text-2xl md:text-3xl font-bold text-black group-hover:text-[#143C68] transition-colors">ICPC Sri Lanka</span>
-              <span className="text-sm sm:text-base md:text-lg font-bold text-[#FDBC1D]">2026</span>
+              <span className="text-sm sm:text-base md:text-lg font-bold text-[#FDBC1D]">2025/2026</span>
             </div>
           </Link>
 
@@ -37,6 +37,7 @@ export default function Navbar() {
             <NavLink href="/timeline">Timeline</NavLink>
             <NavLink href="/faq">FAQ</NavLink>
             <NavLink href="/gallery">Gallery</NavLink>
+            <NavLink href="/qualified-teams">Qualified Teams</NavLink>
             <NavLink href="/staff">Staff</NavLink>
             <NavLink href="/sponsors">Support Us</NavLink>
           </div>
@@ -78,6 +79,7 @@ export default function Navbar() {
               <MobileNavLink href="/timeline" onClick={() => setIsMenuOpen(false)}>Timeline</MobileNavLink>
               <MobileNavLink href="/faq" onClick={() => setIsMenuOpen(false)}>FAQ</MobileNavLink>
               <MobileNavLink href="/gallery" onClick={() => setIsMenuOpen(false)}>Gallery</MobileNavLink>
+              <MobileNavLink href="/qualified-teams" onClick={() => setIsMenuOpen(false)}>Qualified Teams</MobileNavLink>
               <MobileNavLink href="/staff" onClick={() => setIsMenuOpen(false)}>Staff</MobileNavLink>
               <MobileNavLink href="/sponsors" onClick={() => setIsMenuOpen(false)}>Support Us</MobileNavLink>
               <div className="px-4 pt-4 sm:pt-6">
