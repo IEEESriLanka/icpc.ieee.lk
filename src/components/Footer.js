@@ -7,7 +7,7 @@ export default function Footer() {
   return (
     <footer className="bg-[#143C68] text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-10 md:py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 mb-8 sm:mb-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 sm:gap-8 mb-8 sm:mb-10">
           {/* About Section */}
           <div className="lg:col-span-2">
             <div className="flex items-center space-x-3 mb-4 sm:mb-5">
@@ -73,7 +73,19 @@ export default function Footer() {
               <FooterLink href="/timeline">Timeline</FooterLink>
               <FooterLink href="/faq">FAQ</FooterLink>
               <FooterLink href="/gallery">Gallery</FooterLink>
+            </ul>
+          </div>
+
+          {/* Contest */}
+          <div>
+            <h4 className="text-lg sm:text-xl font-bold mb-4 sm:mb-5 text-[#FDBC1D]">
+              Contest
+            </h4>
+            <ul className="space-y-2 sm:space-y-2.5">
+              <FooterLink href="/registration">Registration</FooterLink>
               <FooterLink href="/qualified-teams">Qualified Teams</FooterLink>
+              <FooterLink href="/accommodation">Accommodation</FooterLink>
+              <FooterLink href="/documents">Documents</FooterLink>
               <FooterLink href="/staff">Staff</FooterLink>
               <FooterLink href="/sponsors">Support Us</FooterLink>
             </ul>
@@ -85,7 +97,6 @@ export default function Footer() {
               Resources
             </h4>
             <ul className="space-y-2 sm:space-y-2.5">
-              <FooterLink href="/registration">Registration</FooterLink>
               <li>
                 <a
                   href="https://icpc.global/regionals/finder/Asia-Peradeniya-2026"

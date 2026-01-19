@@ -2,6 +2,7 @@ import HeroSection from '@/components/home/HeroSection';
 import StatsSection from '@/components/home/StatsSection';
 import WhatIsICPCSection from '@/components/home/WhatIsICPCSection';
 import AwarenessSessionSection from '@/components/home/AwarenessSessionSection';
+import DocumentsSection from '@/components/home/DocumentsSection';
 import WhyJoinSection from '@/components/home/WhyJoinSection';
 import HowItWorksSection from '@/components/home/HowItWorksSection';
 import TimelineSection from '@/components/home/TimelineSection';
@@ -15,6 +16,7 @@ export default function Home() {
       <StatsSection />
       <WhatIsICPCSection />
       <AwarenessSessionSection />
+      <DocumentsSection />
       <WhyJoinSection />
       <HowItWorksSection />
       <TimelineSection />

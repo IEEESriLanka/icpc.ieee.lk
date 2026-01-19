@@ -1,6 +1,6 @@
 'use client';
 
-import { FaTrophy, FaMedal, FaStar } from 'react-icons/fa';
+import { FaTrophy, FaStar } from 'react-icons/fa';
 import { FadeIn, ScaleIn, StaggerContainer, StaggerItem } from '@/components/AnimatedSection';
 
 export default function QualifiedTeams() {
@@ -73,10 +73,9 @@ export default function QualifiedTeams() {
             <div className="bg-white rounded-2xl sm:rounded-3xl shadow-2xl p-6 sm:p-8 md:p-12">
               <StaggerContainer>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
-                  {teams.map((team, index) => (
-                    <StaggerItem key={index}>
+                  {teams.map((team) => (
+                    <StaggerItem key={team.name}>
                       <TeamCard
-                        rank={index + 1}
                         name={team.name}
                         university={team.university}
                       />
@@ -84,6 +83,13 @@ export default function QualifiedTeams() {
                   ))}
                 </div>
               </StaggerContainer>
+
+              {/* Note Section */}
+              <div className="mt-8 sm:mt-10 md:mt-12 pt-6 sm:pt-8 border-t-2 border-gray-200">
+                <p className="text-sm sm:text-base text-gray-600 text-center font-medium leading-relaxed">
+                  <span className="font-bold text-[#143C68]">Note:</span> Kindly note that this list shows the top 30 teams arranged by team number rather than contest rankings.
+                </p>
+              </div>
             </div>
           </FadeIn>
         </div>
@@ -112,22 +118,12 @@ export default function QualifiedTeams() {
   );
 }
 
-function TeamCard({ rank, name, university }) {
-  const isTopThree = rank <= 3;
-
+function TeamCard({ name, university }) {
   return (
-    <div className={`bg-gradient-to-br ${
-      isTopThree
-        ? 'from-[#FDBC1D]/10 to-[#FDBC1D]/5 border-2 border-[#FDBC1D]'
-        : 'from-gray-50 to-white border-2 border-gray-200'
-    } rounded-xl sm:rounded-2xl p-4 sm:p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-1`}>
+    <div className="bg-gradient-to-br from-[#FDBC1D]/10 to-[#FDBC1D]/5 border-2 border-[#143C68] rounded-xl sm:rounded-2xl p-4 sm:p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
       <div className="flex items-start gap-3 sm:gap-4">
-        <div className={`flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 rounded-full flex items-center justify-center font-bold text-lg sm:text-xl shadow-lg ${
-          isTopThree
-            ? 'bg-[#FDBC1D] text-[#143C68]'
-            : 'bg-[#143C68] text-white'
-        }`}>
-          {rank <= 3 ? <FaMedal className="w-5 h-5 sm:w-6 sm:h-6" /> : rank}
+        <div className="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 rounded-full flex items-center justify-center font-bold text-lg sm:text-xl shadow-lg bg-[#143C68] text-white">
+          <FaStar className="w-5 h-5 sm:w-6 sm:h-6" />
         </div>
         <div className="flex-1 min-w-0">
           <h3 className="text-lg sm:text-xl font-bold text-[#143C68] mb-1 sm:mb-2 truncate">
