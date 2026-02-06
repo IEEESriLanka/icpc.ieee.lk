@@ -82,7 +82,7 @@ export default function Footer() {
               Contest
             </h4>
             <ul className="space-y-2 sm:space-y-2.5">
-              <FooterLink href="/registration">Registration</FooterLink>
+              <FooterLink href="/winners">Winners</FooterLink>
               <FooterLink href="/qualified-teams">Qualified Teams</FooterLink>
               <FooterLink href="/accommodation">Accommodation</FooterLink>
               <FooterLink href="/documents">Documents</FooterLink>

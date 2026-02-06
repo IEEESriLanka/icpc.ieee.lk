@@ -37,7 +37,7 @@ export default function Navbar() {
             <NavLink href="/timeline">Timeline</NavLink>
             <NavLink href="/faq">FAQ</NavLink>
             <NavLink href="/gallery">Gallery</NavLink>
-            <NavLink href="/qualified-teams">Qualified Teams</NavLink>
+            <NavLink href="/winners">Winners</NavLink>
             <NavLink href="/staff">Staff</NavLink>
             <NavLink href="/sponsors">Support Us</NavLink>
           </div>
@@ -45,10 +45,10 @@ export default function Navbar() {
           {/* CTA Button */}
           <div className="hidden lg:block">
             <Link
-              href="/registration"
+              href="/winners"
               className="inline-flex items-center gap-2 bg-[#FDBC1D] text-[#143C68] px-6 py-3 rounded-2xl text-sm font-bold hover:bg-[#143C68] hover:text-white transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105"
             >
-              Register Now
+              View Results
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>
@@ -79,16 +79,16 @@ export default function Navbar() {
               <MobileNavLink href="/timeline" onClick={() => setIsMenuOpen(false)}>Timeline</MobileNavLink>
               <MobileNavLink href="/faq" onClick={() => setIsMenuOpen(false)}>FAQ</MobileNavLink>
               <MobileNavLink href="/gallery" onClick={() => setIsMenuOpen(false)}>Gallery</MobileNavLink>
-              <MobileNavLink href="/qualified-teams" onClick={() => setIsMenuOpen(false)}>Qualified Teams</MobileNavLink>
+              <MobileNavLink href="/winners" onClick={() => setIsMenuOpen(false)}>Winners</MobileNavLink>
               <MobileNavLink href="/staff" onClick={() => setIsMenuOpen(false)}>Staff</MobileNavLink>
               <MobileNavLink href="/sponsors" onClick={() => setIsMenuOpen(false)}>Support Us</MobileNavLink>
               <div className="px-4 pt-4 sm:pt-6">
                 <Link
-                  href="/registration"
+                  href="/winners"
                   className="block bg-[#FDBC1D] text-[#143C68] px-6 sm:px-8 py-3 sm:py-4 rounded-2xl font-bold text-center hover:bg-[#143C68] hover:text-white transition-all duration-300 shadow-lg text-base sm:text-lg"
                   onClick={() => setIsMenuOpen(false)}
                 >
-                  Register Now
+                  View Results
                 </Link>
               </div>
             </div>

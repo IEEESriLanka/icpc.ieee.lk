@@ -33,7 +33,7 @@ export default function Registration() {
       {/* Hero Section */}
       <FadeIn>
         <section className="relative py-20 sm:py-24 md:py-32 overflow-hidden">
-          <div 
+          <div
             className="absolute inset-0 bg-cover bg-center bg-no-repeat"
             style={{
               backgroundImage: "url('/gallery/54765652272_3b41b9d298_o.jpg')"
@@ -41,10 +41,14 @@ export default function Registration() {
           ></div>
           <div className="absolute inset-0 bg-[#143C68]/90"></div>
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            <div className="inline-flex items-center gap-2 bg-[#FDBC1D] text-[#143C68] px-4 py-2 rounded-full font-bold text-sm mb-6">
+              <FaTrophy className="w-4 h-4" />
+              EVENT CONCLUDED
+            </div>
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-bold mb-6 sm:mb-8 text-white px-4">Registration</h1>
             <div className="h-2 w-20 sm:w-24 bg-[#FDBC1D] mx-auto mb-8 sm:mb-10 rounded-full"></div>
             <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-[#FDBC1D] font-semibold max-w-4xl mx-auto px-4">
-              Ready to compete? Here&apos;s how to register your team
+              ICPC Sri Lanka 2025/26 has concluded. Thank you to all participants!
             </p>
           </div>
         </section>
@@ -313,20 +317,18 @@ export default function Registration() {
       <FadeIn>
         <section className="py-24 bg-[#FDBC1D]">
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 className="text-5xl md:text-6xl font-bold text-[#143C68] mb-8">Ready to Register?</h2>
+            <h2 className="text-5xl md:text-6xl font-bold text-[#143C68] mb-8">Event Concluded</h2>
             <p className="text-2xl text-[#143C68] font-semibold mb-12">
-              Registration opens on 11th November 2025. Be prepared!
+              ICPC Sri Lanka 2025/26 has successfully concluded. View the results!
             </p>
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
               <ScaleIn delay={0.3}>
-                <a
-                  href="https://icpc.global"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <Link
+                  href="/winners"
                   className="inline-block bg-[#143C68] text-white px-12 py-4 rounded-2xl text-xl font-bold hover:bg-[#1e4a7a] transition-all duration-300 hover:-translate-y-1 shadow-xl hover:shadow-2xl"
                 >
-                  ICPC Official Site
-                </a>
+                  View Results
+                </Link>
               </ScaleIn>
               <ScaleIn delay={0.5}>
                 <Link
@@ -423,11 +425,11 @@ function PreliminaryRegistrationContent() {
 
         <div className="flex justify-center">
           <Link
-            href="/selection-rules"
-            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 sm:px-12 py-3 sm:py-4 bg-white text-[#143C68] border-2 border-[#143C68] rounded-xl sm:rounded-2xl text-base sm:text-lg md:text-xl font-bold hover:bg-[#143C68] hover:text-white transition-all duration-300 hover:-translate-y-1 shadow-lg hover:shadow-2xl"
+            href="/winners"
+            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 sm:px-12 py-3 sm:py-4 bg-[#FDBC1D] text-[#143C68] rounded-xl sm:rounded-2xl text-base sm:text-lg md:text-xl font-bold hover:bg-[#143C68] hover:text-white transition-all duration-300 hover:-translate-y-1 shadow-lg hover:shadow-2xl"
           >
             <FaTrophy className="w-5 h-5" />
-            View Selection & Advancement Rules
+            View Contest Results
           </Link>
         </div>
       </div>
@@ -593,12 +595,11 @@ function RegionalRegistrationContent() {
       </div>
       
       <div className="pt-6 sm:pt-8 border-t-2 border-gray-200 space-y-4">
-        {/* TODO: Unlock this button when Regional Onsite Round registration opens */}
         <button
           disabled
           className="w-full sm:w-auto px-8 sm:px-12 py-3 sm:py-4 bg-gray-400 text-white rounded-xl sm:rounded-2xl text-base sm:text-lg md:text-xl font-bold cursor-not-allowed opacity-60"
         >
-          Proceed to Register (Coming Soon)
+          Registration Closed
         </button>
 
         <div className="flex items-center gap-3">
@@ -609,11 +610,11 @@ function RegionalRegistrationContent() {
 
         <div className="flex justify-center">
           <Link
-            href="/selection-rules"
-            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 sm:px-12 py-3 sm:py-4 bg-white text-[#143C68] border-2 border-[#143C68] rounded-xl sm:rounded-2xl text-base sm:text-lg md:text-xl font-bold hover:bg-[#143C68] hover:text-white transition-all duration-300 hover:-translate-y-1 shadow-lg hover:shadow-2xl"
+            href="/winners"
+            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 sm:px-12 py-3 sm:py-4 bg-[#FDBC1D] text-[#143C68] rounded-xl sm:rounded-2xl text-base sm:text-lg md:text-xl font-bold hover:bg-[#143C68] hover:text-white transition-all duration-300 hover:-translate-y-1 shadow-lg hover:shadow-2xl"
           >
             <FaTrophy className="w-5 h-5" />
-            View Selection & Advancement Rules
+            View Contest Results
           </Link>
         </div>
       </div>

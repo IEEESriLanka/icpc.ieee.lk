@@ -8,12 +8,12 @@ export default function DocumentsPage() {
     {
       title: 'ICPC Sri Lanka Regional 2025/26 Lineup',
       description: 'Complete lineup and schedule for the ICPC Sri Lanka Regional Contest 2025/26.',
-      url: 'https://drive.google.com/file/d/1NQtW5Jg9H8nl9mQ_KhBOpNPo_DdYBlRp/view?usp=drivesdk',
+      url: 'https://drive.google.com/file/d/1RrhpVAtts54P2jNeii1sR8Y_ln7-2zlh/view?usp=drivesdk',
     },
     {
       title: 'Regional Onsite Contest Guidelines',
       description: 'Official guidelines and rules for the regional onsite programming contest.',
-      url: 'https://drive.google.com/file/d/1RrhpVAtts54P2jNeii1sR8Y_ln7-2zlh/view?usp=drivesdk',
+      url: 'https://drive.google.com/file/d/1NQtW5Jg9H8nl9mQ_KhBOpNPo_DdYBlRp/view?usp=drivesdk',
     },
   ];
 

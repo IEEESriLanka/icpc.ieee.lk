@@ -4,6 +4,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Analytics from "@/components/Analytics";
 import StructuredData from "@/components/StructuredData";
+import WinnerPopup from "@/components/WinnerPopup";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -70,6 +71,7 @@ export default function RootLayout({ children }) {
         className={`${inter.variable} font-sans antialiased`}
       >
         <Analytics />
+        <WinnerPopup />
         <Navbar />
         {children}
         <Footer />

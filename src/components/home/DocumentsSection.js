@@ -7,11 +7,11 @@ export default function DocumentsSection() {
   const documents = [
     {
       title: 'ICPC Sri Lanka Regional 2025/26 Lineup',
-      url: 'https://drive.google.com/file/d/1NQtW5Jg9H8nl9mQ_KhBOpNPo_DdYBlRp/view?usp=drivesdk',
+      url: 'https://drive.google.com/file/d/1RrhpVAtts54P2jNeii1sR8Y_ln7-2zlh/view?usp=drivesdk',
     },
     {
       title: 'Regional Onsite Contest Guidelines',
-      url: 'https://drive.google.com/file/d/1RrhpVAtts54P2jNeii1sR8Y_ln7-2zlh/view?usp=drivesdk',
+      url: 'https://drive.google.com/file/d/1NQtW5Jg9H8nl9mQ_KhBOpNPo_DdYBlRp/view?usp=drivesdk',
     },
   ];
 
