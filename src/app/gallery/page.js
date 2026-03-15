@@ -54,6 +54,14 @@ export default function Gallery() {
               <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-4 sm:mb-6 px-4">Photo Gallery</h2>
               <div className="h-2 w-20 sm:w-24 bg-[#FDBC1D] mx-auto mb-6 sm:mb-8 rounded-full"></div>
               <p className="text-lg sm:text-xl md:text-2xl text-[#143C68] font-semibold px-4">Moments from ICPC competitions worldwide</p>
+              <a
+                href="https://drive.google.com/drive/folders/1m0BICEznbYXErQ8njB8lrKbIP63ttUHt?usp=drive_link"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center mt-6 px-6 py-3 rounded-xl bg-[#143C68] text-white font-semibold hover:bg-[#1e4a7a] transition-colors duration-300"
+              >
+                View Full Event Album
+              </a>
             </div>
           </FadeIn>
           <StaggerContainer className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
