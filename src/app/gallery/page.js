@@ -30,7 +30,7 @@ export default function Gallery() {
               <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4 sm:mb-6 px-4">Official Event Album</h2>
               <div className="h-2 w-20 sm:w-24 bg-[#FDBC1D] mx-auto mb-6 sm:mb-8 rounded-full"></div>
               <p className="text-lg sm:text-xl md:text-2xl text-[#143C68] font-semibold px-4 max-w-3xl mx-auto">
-                We have removed the global sample photos and now show only our official ICPC Sri Lanka event album.
+                Explore our official ICPC Sri Lanka event photo album.
               </p>
               <a
                 href={EVENT_ALBUM_URL}
