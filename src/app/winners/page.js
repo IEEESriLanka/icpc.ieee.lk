@@ -19,12 +19,12 @@ export default function WinnersPage() {
     team: 'Team Glory',
     university: 'Sri Lanka Institute of Information Technology (SLIIT)',
     image: '/winner/01_TeamGlory.jpg',
-    medal: 'Gold Medal Winner',
+    medal: null,
   };
 
   const asiaWestQualifiers = [
-    { team: 'TLEMora', university: 'University of Moratuwa, Sri Lanka', image: '/winner/02_Telemora.jpg', medal: 'Silver Medal Winner' },
-    { team: 'AfterShock', university: 'East West University, Bangladesh', image: '/winner/03_Aftershock.jpg', medal: 'Bronze Medal Winner' },
+    { team: 'TLEMora', university: 'University of Moratuwa, Sri Lanka', image: '/winner/02_Telemora.jpg', medal: null },
+    { team: 'AfterShock', university: 'East West University, Bangladesh', image: '/winner/03_Aftershock.jpg', medal: null },
     { team: 'RePeaTers', university: 'University of Kelaniya, Sri Lanka', image: '/winner/05_Repeaters.jpg', medal: null },
     { team: 'Velosphere', university: 'University of Moratuwa, Sri Lanka', image: '/winner/Velosphere.jpg', medal: null },
     { team: 'NovaCore', university: 'University of Peradeniya, Sri Lanka', image: '/winner/NovaCore.jpg', medal: null },
@@ -62,7 +62,7 @@ export default function WinnersPage() {
         </div>
       </section>
 
-      {/* Top Results Section */}
+      {/* Top Results Section - Text Only */}
       <section className="py-12 sm:py-16 md:py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <FadeIn>
@@ -74,73 +74,44 @@ export default function WinnersPage() {
             </div>
           </FadeIn>
 
-          {/* Champions Card - Featured */}
-          <ScaleIn>
-            <div className="max-w-4xl mx-auto mb-10">
-              <div className="bg-gradient-to-br from-[#FFD700]/20 via-[#FDBC1D]/10 to-[#FFD700]/20 border-4 border-[#FFD700] rounded-3xl p-6 sm:p-8 shadow-2xl">
-                <div className="text-center mb-6">
-                  <div className="inline-flex items-center gap-2 bg-[#FFD700] text-[#143C68] px-6 py-2 rounded-full font-bold text-lg">
-                    <FaTrophy className="w-5 h-5" />
-                    CHAMPIONS
-                  </div>
-                </div>
-                {topResults[0].image && (
-                  <div className="relative w-full h-64 sm:h-80 md:h-96 rounded-2xl overflow-hidden mb-6">
-                    <Image
-                      src={topResults[0].image}
-                      alt={topResults[0].team}
-                      fill
-                      className="object-cover"
-                    />
-                  </div>
-                )}
-                <div className="text-center">
-                  <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#143C68] mb-2">{topResults[0].team}</h3>
-                  <p className="text-lg sm:text-xl text-gray-700 font-semibold">{topResults[0].university}</p>
-                </div>
-              </div>
-            </div>
-          </ScaleIn>
-
-          {/* Runners Up Grid */}
-          <StaggerContainer className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {topResults.slice(1).map((result, index) => (
-              <StaggerItem key={index}>
-                <div className={`bg-white rounded-2xl shadow-xl overflow-hidden border-2 ${
-                  result.medal === 'silver' ? 'border-gray-400' :
-                  result.medal === 'bronze' ? 'border-amber-600' : 'border-gray-200'
-                } hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 h-full`}>
-                  {result.image && (
-                    <div className="relative w-full h-48 sm:h-56">
-                      <Image
-                        src={result.image}
-                        alt={result.team}
-                        fill
-                        className="object-cover"
-                      />
-                      {result.medal && (
-                        <div className={`absolute top-4 right-4 px-3 py-1 rounded-full text-sm font-bold ${
-                          result.medal === 'silver' ? 'bg-gray-400 text-white' : 'bg-amber-600 text-white'
+          {/* Results List */}
+          <div className="max-w-4xl mx-auto">
+            <StaggerContainer className="space-y-4">
+              {topResults.map((result, index) => (
+                <StaggerItem key={index}>
+                  <div className={`bg-white rounded-2xl shadow-lg p-6 sm:p-8 border-l-4 ${
+                    index === 0 ? 'border-[#FFD700] bg-gradient-to-r from-[#FFD700]/10 to-white' :
+                    result.medal === 'silver' ? 'border-gray-400 bg-gradient-to-r from-gray-100 to-white' :
+                    result.medal === 'bronze' ? 'border-amber-600 bg-gradient-to-r from-amber-50 to-white' :
+                    'border-[#143C68]'
+                  }`}>
+                    <div className="flex items-center gap-4">
+                      <div className={`flex-shrink-0 w-12 h-12 sm:w-16 sm:h-16 rounded-full flex items-center justify-center font-bold text-xl sm:text-2xl ${
+                        index === 0 ? 'bg-[#FFD700] text-[#143C68]' :
+                        result.medal === 'silver' ? 'bg-gray-400 text-white' :
+                        result.medal === 'bronze' ? 'bg-amber-600 text-white' :
+                        'bg-[#143C68] text-white'
+                      }`}>
+                        {index === 0 ? <FaTrophy className="w-6 h-6 sm:w-8 sm:h-8" /> : index + 1}
+                      </div>
+                      <div className="flex-1">
+                        <div className={`inline-block px-3 py-1 rounded-full text-xs font-bold mb-2 ${
+                          index === 0 ? 'bg-[#FFD700] text-[#143C68]' :
+                          result.medal === 'silver' ? 'bg-gray-400 text-white' :
+                          result.medal === 'bronze' ? 'bg-amber-600 text-white' :
+                          'bg-[#143C68] text-white'
                         }`}>
-                          {result.medal === 'silver' ? 'SILVER' : 'BRONZE'}
+                          {result.rank}
                         </div>
-                      )}
+                        <h3 className="text-xl sm:text-2xl font-bold text-[#143C68] mb-1">{result.team}</h3>
+                        <p className="text-gray-600 font-medium">{result.university}</p>
+                      </div>
                     </div>
-                  )}
-                  <div className="p-5 sm:p-6">
-                    <div className={`inline-block px-3 py-1 rounded-full text-sm font-bold mb-3 ${
-                      result.medal === 'silver' ? 'bg-gray-100 text-gray-700' :
-                      result.medal === 'bronze' ? 'bg-amber-100 text-amber-800' : 'bg-[#143C68]/10 text-[#143C68]'
-                    }`}>
-                      {result.rank}
-                    </div>
-                    <h3 className="text-xl font-bold text-[#143C68] mb-1">{result.team}</h3>
-                    <p className="text-gray-600">{result.university}</p>
                   </div>
-                </div>
-              </StaggerItem>
-            ))}
-          </StaggerContainer>
+                </StaggerItem>
+              ))}
+            </StaggerContainer>
+          </div>
         </div>
       </section>
 
@@ -207,9 +178,13 @@ export default function WinnersPage() {
             </div>
           </FadeIn>
 
-          <StaggerContainer className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <StaggerContainer className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-6">
             {asiaWestQualifiers.map((team, index) => (
-              <StaggerItem key={index}>
+              <StaggerItem key={index} className={
+                index < 3 ? 'lg:col-span-2' :
+                index === 3 ? 'lg:col-span-2 lg:col-start-2' :
+                'lg:col-span-2'
+              }>
                 <div className={`bg-white rounded-2xl shadow-xl overflow-hidden border-2 ${
                   team.medal === 'Silver Medal Winner' ? 'border-gray-400' :
                   team.medal === 'Bronze Medal Winner' ? 'border-amber-600' : 'border-[#143C68]'
