@@ -10,69 +10,9 @@ const staffMembers = [
     url: "http://people.ce.pdn.ac.lk/staff/academic/upul/"
   },
   {
-    name: "Mr. Dhammika Marasinghe",
-    position: "Deputy & Associate Director",
-    url: "https://lk.linkedin.com/in/dhammikamarasinghe"
-  },
-  {
-    name: "Prof. S. Vasanthapriyan",
-    position: "Advisory",
-    url: "https://www.sab.ac.lk/staff-directory/216"
-  },
-  {
-    name: "Prof. Roshan G. Ragel",
-    position: "Advisory",
-    url: "http://people.ce.pdn.ac.lk/staff/academic/roshan-ragel/"
-  },
-  {
-    name: "Dr. Hakim A. Usoof",
-    position: "Judging Chair",
-    url: "https://sci.pdn.ac.lk/scs/staff/Hakim-Usoof"
-  },
-  {
-    name: "Dr. Tharindu Weerakoon",
-    position: "Contest Chair",
-    url: "http://web2.ee.pdn.ac.lk/TharinduW"
-  },
-  {
-    name: "Mr. Biswajith Dissanayake",
-    position: "Technical Chair",
-    url: "http://people.ce.pdn.ac.lk/staff/academic/biswajith-dissanayake/"
-  },
-  {
-    name: "Mr. Thamindu Sri Nirmal",
-    position: "Communication Chair",
-    url: "https://www.linkedin.com/in/thamindu-nirmal"
-  },
-  {
-    name: "Ms. Yasodha Vimukthi",
-    position: "Communication Chair",
-    url: "http://people.ce.pdn.ac.lk/staff/academic/yasodha-vimukthi/"
-  },
-  {
     name: "Mr. Dineth Palliyaguru",
     position: "Communication Chair",
     url: "https://www.linkedin.com/in/dineth-palliyaguru"
-  },
-  {
-    name: "Ms. Lithasa Jayamaha",
-    position: "Finance Manager",
-    url: "https://www.linkedin.com/in/lithasaj"
-  },
-  {
-    name: "Ms. Sarani",
-    position: "Volunteer Chair",
-    url: null
-  },
-  {
-    name: "Mr. Lasith",
-    position: "Volunteer Chair",
-    url: null
-  },
-  {
-    name: "Mr. Rashmi Virajitha",
-    position: "Volunteer Chair",
-    url: null
   }
 ];
 
@@ -95,7 +35,7 @@ export default function StaffPage() {
             </h1>
             <div className="h-2 w-24 sm:w-32 bg-[#FDBC1D] mx-auto mb-6 sm:mb-8 rounded-full"></div>
             <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl text-center max-w-4xl mx-auto font-bold text-[#FDBC1D] px-4">
-              Meet the dedicated team behind <br /> ICPC Sri Lanka 2025/2026
+              Meet the dedicated team behind <br /> ICPC Sri Lanka 2026/2027
             </p>
           </FadeInUp>
         </div>
@@ -106,7 +46,7 @@ export default function StaffPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <FadeInUp>
             <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-700 leading-relaxed font-semibold px-4">
-              The success of ICPC Sri Lanka 2025/2026 is made possible by our dedicated organizing committee—a team of passionate professionals, educators, and volunteers working together to bring this historic event to life.
+              The success of ICPC Sri Lanka 2026/2027 is made possible by our dedicated organizing committee—a team of passionate professionals, educators, and volunteers working together to bring this event to life.
             </p>
           </FadeInUp>
         </div>

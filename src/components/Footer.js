@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { FaFacebook, FaWhatsapp, FaLinkedin, FaEnvelope, FaMapMarkerAlt, FaHandshake, FaYoutube } from 'react-icons/fa';
+import { FaFacebook, FaWhatsapp, FaLinkedin, FaEnvelope, FaMapMarkerAlt, FaYoutube } from 'react-icons/fa';
 import { UserIcon, BuildingOfficeIcon } from '@heroicons/react/24/outline';
 
 export default function Footer() {
@@ -24,13 +24,13 @@ export default function Footer() {
                 <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-white">
                   ICPC <span className="text-[#FDBC1D]">Sri Lanka</span>
                 </h3>
-                <div className="text-base sm:text-lg font-bold text-[#FDBC1D]">2025/2026</div>
+                <div className="text-base sm:text-lg font-bold text-[#FDBC1D]">2026/2027</div>
                 <div className="text-xs text-white/90 font-medium">Code Beyond Borders</div>
               </div>
             </div>
             <p className="text-white/95 mb-4 sm:mb-6 leading-relaxed text-sm sm:text-base">
-              The International Collegiate Programming Contest is coming to Sri Lanka for the first time in 2025/2026.
-              Join us in making history as we compete on the world&apos;s biggest programming stage.
+              The International Collegiate Programming Contest is coming to Sri Lanka for 2026/2027.
+              Join us as we compete on the world&apos;s biggest programming stage.
             </p>
             <div className="flex space-x-2 sm:space-x-3">
               <SocialLink
@@ -85,7 +85,6 @@ export default function Footer() {
               <FooterLink href="/winners">Winners</FooterLink>
               <FooterLink href="/qualified-teams">Qualified Teams</FooterLink>
               <FooterLink href="/accommodation">Accommodation</FooterLink>
-              <FooterLink href="/documents">Documents</FooterLink>
               <FooterLink href="/staff">Staff</FooterLink>
               <FooterLink href="/sponsors">Support Us</FooterLink>
             </ul>
@@ -180,90 +179,6 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Supported by - Full width below */}
-          <div className="bg-white rounded-lg sm:rounded-xl p-4 sm:p-5 shadow-lg">
-            <div className="flex items-start gap-3 sm:gap-4">
-              <div className="bg-[#FDBC1D] p-2 sm:p-3 rounded-lg">
-                <FaHandshake className="w-6 h-6 sm:w-7 sm:h-7 text-[#143C68]" />
-              </div>
-              <div className="flex-1">
-                <div className="text-xs font-bold text-[#143C68] uppercase tracking-wider mb-3">Supported by</div>
-
-                {/* Support Organizations Grid */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
-                  <a
-                    href="https://eees-uop.edu.lk/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex flex-col items-center justify-center hover:opacity-80 transition-opacity group"
-                  >
-                    <img
-                      src="/eees.jpg"
-                      alt="Electrical & Electronic Engineering Society (EEES)"
-                      className="h-12 sm:h-14 w-auto object-contain mb-1"
-                    />
-                    <div className="text-xs sm:text-sm font-bold text-black text-center leading-tight">
-                      Electrical & Electronic Engineering Society (EEES)
-                    </div>
-                    <div className="text-xs text-gray-600 font-medium text-center">
-                      University of Peradeniya
-                    </div>
-                  </a>
-                  <a
-                    href="https://aces.ce.pdn.ac.lk"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex flex-col items-center justify-center hover:opacity-80 transition-opacity group"
-                  >
-                    <img
-                      src="/aces.jpg"
-                      alt="Association of Computer Engineering Students (ACES)"
-                      className="h-12 sm:h-14 w-auto object-contain mb-1"
-                    />
-                    <div className="text-xs sm:text-sm font-bold text-black text-center leading-tight">
-                      Association of Computer Engineering Students (ACES)
-                    </div>
-                    <div className="text-xs text-gray-600 font-medium text-center">
-                      University of Peradeniya
-                    </div>
-                  </a>
-                  <a
-                    href="https://www.ceit.pdn.ac.lk"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex flex-col items-center justify-center hover:opacity-80 transition-opacity group"
-                  >
-                    <img
-                      src="/ceit.png"
-                      alt="Information Technology Center, University of Peradeniya"
-                      className="h-12 sm:h-14 w-auto object-contain mb-1"
-                    />
-                    <div className="text-xs sm:text-sm font-bold text-black text-center leading-tight">
-                      Information Technology Center
-                    </div>
-                    <div className="text-xs text-gray-600 font-medium text-center">
-                      University of Peradeniya
-                    </div>
-                  </a>
-                  <a
-                    href="https://iesl.lk/index.php?option=com_chapters&view=committee_members&stdcom=181&Itemid=224&lang=en"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex flex-col items-center justify-center hover:opacity-80 transition-opacity group"
-                  >
-                    <img
-                      src="/IESL-YMS.jpeg"
-                      alt="Young Members Section (YMS)"
-                      className="h-12 sm:h-14 w-auto object-contain mb-1"
-                    />
-                    <div className="text-xs sm:text-sm font-bold text-black text-center leading-tight">
-                      Young Members Section (YMS)
-                    </div>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
 
         {/* Bottom Bar */}

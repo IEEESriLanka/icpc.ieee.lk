@@ -106,21 +106,20 @@ export default function HeroSection() {
 
             <SlideInBottom delay={1} duration={0.8}>
               <p className="text-base sm:text-lg md:text-xl mb-8 sm:mb-12 max-w-4xl mx-auto leading-relaxed text-white/95 font-medium px-4">
-                For the first time ever, Sri Lanka enters the world&apos;s biggest stage of competitive programming.
-                <span className="text-[#FDBC1D] font-bold"> Join us in making history.</span>
+                <span className="text-[#FDBC1D] font-bold">Join the biggest stage of competitive programming representing Sri Lanka.</span>
               </p>
             </SlideInBottom>
-            
+
             <SlideInBottom delay={1.2} duration={0.8}>
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center w-full max-w-3xl mx-auto mb-8 sm:mb-12 px-4">
-                <Link
-                  href="/registration"
-                  className="group relative inline-flex items-center justify-center gap-2 sm:gap-3 bg-[#FDBC1D] text-[#143C68] px-6 sm:px-10 py-3 sm:py-4 rounded-2xl text-lg sm:text-xl font-bold hover:bg-[#e6a91a] transition-all duration-300 shadow-2xl transform hover:scale-105 w-full sm:w-auto"
+                <button
+                  disabled
+                  className="relative inline-flex items-center justify-center gap-2 sm:gap-3 bg-gray-400 text-white px-6 sm:px-10 py-3 sm:py-4 rounded-2xl text-lg sm:text-xl font-bold cursor-not-allowed opacity-60 w-full sm:w-auto"
                 >
-                  <FaRocket className="w-4 h-4 sm:w-5 sm:h-5 group-hover:animate-bounce" />
+                  <FaRocket className="w-4 h-4 sm:w-5 sm:h-5" />
                   <span>Register Now</span>
-                  <ArrowRightIcon className="w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-transform" />
-                </Link>
+                  <ArrowRightIcon className="w-4 h-4 sm:w-5 sm:h-5" />
+                </button>
                 <Link
                   href="/about"
                   className="group inline-flex items-center justify-center gap-2 sm:gap-3 bg-white/20 backdrop-blur-md border border-white/30 text-white px-6 sm:px-10 py-3 sm:py-4 rounded-2xl text-lg sm:text-xl font-bold hover:bg-white hover:text-[#143C68] transition-all duration-300 shadow-2xl transform hover:scale-105 w-full sm:w-auto"

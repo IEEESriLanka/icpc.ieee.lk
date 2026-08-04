@@ -30,21 +30,21 @@ export default function CTASection() {
         
         <FadeIn delay={0.4}>
           <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-[#143C68] mb-12 sm:mb-16 max-w-4xl mx-auto font-semibold leading-relaxed px-4">
-            Join ICPC Sri Lanka 2025/2026 and represent your country on the world&apos;s biggest programming stage
+            Join ICPC Sri Lanka 2026/2027 and represent your country on the world&apos;s biggest programming stage
           </p>
         </FadeIn>
-        
+
         <ScaleIn delay={0.6}>
           <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-center w-full sm:w-auto">
-            <Link
-              href="/registration"
-              className="group relative inline-flex items-center gap-3 sm:gap-4 bg-[#143C68] text-white px-8 sm:px-12 md:px-16 py-4 sm:py-6 md:py-8 rounded-2xl sm:rounded-3xl text-lg sm:text-xl md:text-2xl font-bold hover:bg-[#1e4a7a] transition-all duration-300 shadow-2xl hover:-translate-y-2 w-full sm:w-auto justify-center"
+            <button
+              disabled
+              className="relative inline-flex items-center gap-3 sm:gap-4 bg-gray-400 text-white px-8 sm:px-12 md:px-16 py-4 sm:py-6 md:py-8 rounded-2xl sm:rounded-3xl text-lg sm:text-xl md:text-2xl font-bold cursor-not-allowed opacity-60 w-full sm:w-auto justify-center"
             >
-              <FaRocket className="w-5 h-5 sm:w-6 sm:h-6 md:w-8 md:h-8 group-hover:animate-bounce" />
+              <FaRocket className="w-5 h-5 sm:w-6 sm:h-6 md:w-8 md:h-8" />
               <span>Register Your Team Now</span>
-              <ArrowRightIcon className="w-5 h-5 sm:w-6 sm:h-6 md:w-8 md:h-8 group-hover:translate-x-1 transition-transform" />
-            </Link>
-            
+              <ArrowRightIcon className="w-5 h-5 sm:w-6 sm:h-6 md:w-8 md:h-8" />
+            </button>
+
             <Link
               href="/about"
               className="group inline-flex items-center gap-3 sm:gap-4 bg-white/20 backdrop-blur-md border border-white/30 text-[#143C68] px-8 sm:px-12 py-4 sm:py-6 rounded-2xl text-base sm:text-xl font-bold hover:bg-white hover:text-[#143C68] transition-all duration-300 shadow-xl hover:-translate-y-1 w-full sm:w-auto justify-center"
@@ -54,14 +54,6 @@ export default function CTASection() {
             </Link>
           </div>
         </ScaleIn>
-        
-        <FadeIn delay={0.8}>
-          <div className="mt-12 sm:mt-16 text-center px-4">
-            <p className="text-base sm:text-lg text-[#143C68]/80 font-medium">
-              Registration opens on <span className="font-bold text-[#143C68]">11th November 2025</span>
-            </p>
-          </div>
-        </FadeIn>
       </div>
     </section>
   );

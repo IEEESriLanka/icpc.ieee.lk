@@ -25,7 +25,7 @@ export default function Navbar() {
             </div>
             <div className="flex flex-col">
               <span className="text-xl sm:text-2xl md:text-3xl font-bold text-black group-hover:text-[#143C68] transition-colors">ICPC Sri Lanka</span>
-              <span className="text-sm sm:text-base md:text-lg font-bold text-[#FDBC1D]">2025/2026</span>
+              <span className="text-sm sm:text-base md:text-lg font-bold text-[#FDBC1D]">2026/2027</span>
             </div>
           </Link>
 
@@ -37,22 +37,9 @@ export default function Navbar() {
             <NavLink href="/timeline">Timeline</NavLink>
             <NavLink href="/faq">FAQ</NavLink>
             <NavLink href="/gallery">Gallery</NavLink>
-            <NavLink href="/winners">Winners</NavLink>
+            <NavLink href="/winners">Past Winners</NavLink>
             <NavLink href="/staff">Staff</NavLink>
             <NavLink href="/sponsors">Support Us</NavLink>
-          </div>
-
-          {/* CTA Button */}
-          <div className="hidden lg:block">
-            <Link
-              href="/winners"
-              className="inline-flex items-center gap-2 bg-[#FDBC1D] text-[#143C68] px-6 py-3 rounded-2xl text-sm font-bold hover:bg-[#143C68] hover:text-white transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105"
-            >
-              View Results
-              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-              </svg>
-            </Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -79,18 +66,9 @@ export default function Navbar() {
               <MobileNavLink href="/timeline" onClick={() => setIsMenuOpen(false)}>Timeline</MobileNavLink>
               <MobileNavLink href="/faq" onClick={() => setIsMenuOpen(false)}>FAQ</MobileNavLink>
               <MobileNavLink href="/gallery" onClick={() => setIsMenuOpen(false)}>Gallery</MobileNavLink>
-              <MobileNavLink href="/winners" onClick={() => setIsMenuOpen(false)}>Winners</MobileNavLink>
+              <MobileNavLink href="/winners" onClick={() => setIsMenuOpen(false)}>Past Winners</MobileNavLink>
               <MobileNavLink href="/staff" onClick={() => setIsMenuOpen(false)}>Staff</MobileNavLink>
               <MobileNavLink href="/sponsors" onClick={() => setIsMenuOpen(false)}>Support Us</MobileNavLink>
-              <div className="px-4 pt-4 sm:pt-6">
-                <Link
-                  href="/winners"
-                  className="block bg-[#FDBC1D] text-[#143C68] px-6 sm:px-8 py-3 sm:py-4 rounded-2xl font-bold text-center hover:bg-[#143C68] hover:text-white transition-all duration-300 shadow-lg text-base sm:text-lg"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  View Results
-                </Link>
-              </div>
             </div>
           </div>
         )}

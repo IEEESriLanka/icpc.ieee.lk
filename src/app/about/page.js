@@ -1,6 +1,5 @@
 'use client';
 
-import Link from 'next/link';
 import { GlobeAltIcon, BriefcaseIcon, UserGroupIcon } from '@heroicons/react/24/outline';
 import { FaChartLine } from 'react-icons/fa';
 import { FadeIn, FadeInLeft, FadeInRight, ScaleIn, StaggerContainer, StaggerItem } from '@/components/AnimatedSection';
@@ -65,10 +64,6 @@ export default function About() {
 
             <FadeInLeft delay={0.5}>
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-6 sm:mb-8 text-center px-4">A Historic Moment for Sri Lanka</h2>
-              <p className="text-lg sm:text-xl md:text-2xl text-gray-700 leading-relaxed mb-6 sm:mb-8 text-center font-semibold px-4">
-                And in 2026, <strong className="text-[#143C68]">Sri Lanka joins the map</strong>. 
-                This is your chance to be part of history.
-              </p>
             </FadeInLeft>
 
             <FadeInRight delay={0.6}>
@@ -78,12 +73,12 @@ export default function About() {
                   <PathItem 
                     step="1" 
                     title="Sri Lanka National Contest" 
-                    description="Compete against the best teams in Sri Lanka. The champion team advances directly to ICPC World Finals. Four runner-up teams advance to ICPC Asia West Regional."
+                    description="Compete against the best teams in Sri Lanka. The champion team advances directly to ICPC World Finals. Five runner-up teams advance to ICPC Asia West Regional."
                   />
                   <PathItem 
                     step="2" 
                     title="ICPC Asia West Regional" 
-                    description="Four runner-up teams from the national contest represent Sri Lanka on the regional stage. Top teams from this regional advance to ICPC World Finals."
+                    description="Five runner-up teams from the national contest represent Sri Lanka on the regional stage. Top teams from this regional advance to ICPC World Finals."
                   />
                   <PathItem 
                     step="3" 
@@ -144,15 +139,15 @@ export default function About() {
             </p>
           </FadeIn>
           <ScaleIn delay={0.3}>
-            <Link
-              href="/registration"
-              className="inline-flex items-center gap-2 sm:gap-3 bg-[#143C68] text-white px-8 sm:px-12 py-4 sm:py-6 rounded-2xl sm:rounded-3xl text-lg sm:text-xl md:text-2xl font-bold hover:bg-[#1e4a7a] transition-all duration-300 shadow-2xl hover:-translate-y-2"
+            <button
+              disabled
+              className="inline-flex items-center gap-2 sm:gap-3 bg-gray-400 text-white px-8 sm:px-12 py-4 sm:py-6 rounded-2xl sm:rounded-3xl text-lg sm:text-xl md:text-2xl font-bold cursor-not-allowed opacity-60"
             >
               Register Your Team
               <svg className="w-5 h-5 sm:w-6 sm:h-6 md:w-8 md:h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>
-            </Link>
+            </button>
           </ScaleIn>
         </div>
       </section>

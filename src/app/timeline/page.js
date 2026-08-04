@@ -46,7 +46,7 @@ export default function Timeline() {
               <div className="space-y-12">
                 <StaggerItem>
                   <TimelineEvent
-                    date="11th November 2025"
+                    date="TBD"
                     title="Registrations Open"
                     description="Team registration opens for universities across Sri Lanka. Form your team of 3 students and find a faculty coach to register."
                     icon={<FaEdit className="w-8 h-8" />}
@@ -58,12 +58,13 @@ export default function Timeline() {
                     ]}
                     registrationLink="/registration"
                     registrationText="Proceed to Online Registration"
+                    registrationDisabled={true}
                   />
                 </StaggerItem>
 
                 <StaggerItem>
                   <TimelineEvent
-                    date="30th December 2025"
+                    date="TBD"
                     title="Registrations Close"
                     description="Registration deadline for teams. Make sure to complete your registration before this date to secure your spot in the competition."
                     icon={<FaCheckCircle className="w-8 h-8" />}
@@ -78,7 +79,7 @@ export default function Timeline() {
 
                 <StaggerItem>
                   <TimelineEvent
-                    date="4th January 2026"
+                    date="TBD"
                     title="Preliminary Online Round"
                     description="An online preliminary round to help teams prepare and get familiar with the contest format."
                     icon={<FaLaptopCode className="w-8 h-8" />}
@@ -90,12 +91,13 @@ export default function Timeline() {
                     ]}
                     registrationLink="/registration"
                     registrationText="Proceed to Online Registration"
+                    registrationDisabled={true}
                   />
                 </StaggerItem>
 
                 <StaggerItem>
                   <TimelineEvent
-                    date="25th January 2026"
+                    date="TBD"
                     title="Sri Lanka Onsite Regional"
                     description="The main national contest held onsite. This is where history will be made as Sri Lanka hosts its first-ever ICPC contest!"
                     icon={<FaTrophy className="w-8 h-8" />}
@@ -116,7 +118,7 @@ export default function Timeline() {
 
                 <StaggerItem>
                   <TimelineEvent
-                    date="March 2026"
+                    date="TBD"
                     title="ICPC Asia West Regional"
                     description="Five runner-up teams from Sri Lanka will represent the country at the ICPC Asia West Regional Contest."
                     icon={<FaGlobeAsia className="w-8 h-8" />}
@@ -131,7 +133,7 @@ export default function Timeline() {
 
                 <StaggerItem>
                   <TimelineEvent
-                    date="August 2026"
+                    date="TBD"
                     title="ICPC World Finals"
                     description="The ultimate destination - compete with the world's best programming teams at the ICPC World Finals."
                     icon={<FaGlobeAsia className="w-8 h-8" />}
@@ -159,12 +161,12 @@ export default function Timeline() {
           <ScaleIn delay={0.2}>
             <div className="bg-[#FDBC1D] rounded-2xl sm:rounded-3xl p-6 sm:p-8 md:p-12 shadow-2xl">
               <div className="space-y-4 sm:space-y-6">
-                <QuickDate date="11th November 2025" event="Registrations Open" />
-                <QuickDate date="30th December 2025" event="Registrations Close" />
-                <QuickDate date="4th January 2026" event="Preliminary Online Round" />
-                <QuickDate date="25th January 2026" event="Sri Lanka Onsite Regional" highlight={true} />
-                <QuickDate date="March 2026" event="ICPC Asia West" />
-                <QuickDate date="August 2026" event="ICPC World Finals" />
+                <QuickDate date="TBD" event="Registrations Open" />
+                <QuickDate date="TBD" event="Registrations Close" />
+                <QuickDate date="TBD" event="Preliminary Online Round" />
+                <QuickDate date="TBD" event="Sri Lanka Onsite Regional" highlight={true} />
+                <QuickDate date="TBD" event="ICPC Asia West" />
+                <QuickDate date="TBD" event="ICPC World Finals" />
               </div>
             </div>
           </ScaleIn>
@@ -176,20 +178,17 @@ export default function Timeline() {
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <FadeIn>
             <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 sm:mb-8 px-4">Don&apos;t Miss Out!</h2>
-            <p className="text-lg sm:text-xl md:text-2xl text-white mb-8 sm:mb-12 font-semibold px-4">
-              Registration opens on 11th November 2025. Be ready to register your team!
-            </p>
           </FadeIn>
           <ScaleIn delay={0.3}>
-            <Link
-              href="/registration"
-              className="inline-flex items-center gap-2 sm:gap-3 bg-[#FDBC1D] text-[#143C68] px-8 sm:px-12 py-4 sm:py-6 rounded-2xl sm:rounded-3xl text-lg sm:text-xl md:text-2xl font-bold hover:bg-[#e6a91a] transition-all duration-300 shadow-2xl hover:-translate-y-2"
+            <button
+              disabled
+              className="inline-flex items-center gap-2 sm:gap-3 bg-gray-400 text-white px-8 sm:px-12 py-4 sm:py-6 rounded-2xl sm:rounded-3xl text-lg sm:text-xl md:text-2xl font-bold cursor-not-allowed opacity-60"
             >
               Registration Details
               <svg className="w-5 h-5 sm:w-6 sm:h-6 md:w-8 md:h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>
-            </Link>
+            </button>
           </ScaleIn>
         </div>
       </section>

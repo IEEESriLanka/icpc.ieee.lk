@@ -1,7 +1,6 @@
 'use client';
 
 import { useState } from 'react';
-import Link from 'next/link';
 import { FadeIn, ScaleIn, StaggerContainer, StaggerItem } from '@/components/AnimatedSection';
 
 export default function FAQ() {
@@ -11,14 +10,6 @@ export default function FAQ() {
     {
       category: 'Registration',
       questions: [
-        {
-          question: 'When does registration open?',
-          answer: 'Registration for ICPC Sri Lanka 2025/2026 opens in November 2025. Make sure to register early as spots are limited!'
-        },
-        {
-          question: 'How much is the registration fee?',
-          answer: 'There is no registration fee for the Preliminary Online Round. For the Regional Onsite Round, the registration fee is LKR 2,000 per team for Sri Lankan teams and USD 300 per team for International teams. This fee includes meals and logistics on the day of the contest.'
-        },
         {
           question: 'Can we register multiple teams from the same university?',
           answer: 'Yes! Multiple teams from the same university can register, subject to contest capacity. Each team must have 3 different students and a coach.'
@@ -88,10 +79,6 @@ export default function FAQ() {
           answer: 'Practice solving algorithmic problems on platforms like Codeforces, LeetCode, and HackerRank. Study data structures, algorithms, and problem-solving techniques. Practice as a team!'
         },
         {
-          question: 'Are there practice contests before the regional?',
-          answer: 'Yes! There will be an online preliminary round in October-November 2025 to help teams prepare and qualify for the regional contest.'
-        },
-        {
           question: 'What topics should we focus on?',
           answer: 'Focus on data structures (graphs, trees, heaps), algorithms (sorting, searching, dynamic programming), mathematics, and string processing.'
         }
@@ -139,7 +126,7 @@ export default function FAQ() {
             </h1>
             <div className="h-2 w-24 sm:w-32 bg-[#FDBC1D] mx-auto mb-8 sm:mb-10 rounded-full"></div>
             <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-[#FDBC1D] font-semibold max-w-4xl mx-auto px-4">
-              Find answers to common questions about ICPC Sri Lanka 2025/2026
+              Find answers to common questions about ICPC Sri Lanka 2026/2027
             </p>
           </div>
         </section>
@@ -232,16 +219,13 @@ export default function FAQ() {
         <section className="py-12 sm:py-16 md:py-24 bg-[#FDBC1D]">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#143C68] mb-6 sm:mb-8 px-4">Ready to Register?</h2>
-            <p className="text-lg sm:text-xl md:text-2xl text-[#143C68] font-semibold mb-8 sm:mb-10 md:mb-12 px-4">
-              Don&apos;t wait! Registration opens on 11th November 2025
-            </p>
             <ScaleIn delay={0.3}>
-              <Link
-                href="/registration"
-                className="inline-block bg-[#143C68] text-white px-8 sm:px-10 md:px-12 py-3 sm:py-4 rounded-xl sm:rounded-2xl text-base sm:text-lg md:text-xl font-bold hover:bg-[#1e4a7a] transition-all duration-300 hover:-translate-y-1 shadow-xl hover:shadow-2xl w-full sm:w-auto"
+              <button
+                disabled
+                className="inline-block bg-gray-400 text-white px-8 sm:px-10 md:px-12 py-3 sm:py-4 rounded-xl sm:rounded-2xl text-base sm:text-lg md:text-xl font-bold cursor-not-allowed opacity-60 w-full sm:w-auto"
               >
                 Registration Details
-              </Link>
+              </button>
             </ScaleIn>
           </div>
         </section>

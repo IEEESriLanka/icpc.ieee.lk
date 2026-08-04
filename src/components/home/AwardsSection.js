@@ -100,7 +100,7 @@ export default function AwardsSection() {
                   Award Distribution Policy
                 </h3>
                 <p className="text-gray-700 text-base sm:text-lg leading-relaxed mb-4">
-                  <strong className="text-[#143C68]">Champion and four runner-up teams will be recognized.</strong>
+                  <strong className="text-[#143C68]">Champion and five runner-up teams will be recognized.</strong>
                 </p>
                 <p className="text-gray-700 text-base sm:text-lg leading-relaxed mb-3">
                   Allowed for awards and selections:
@@ -119,7 +119,7 @@ export default function AwardsSection() {
                       <span className="text-[#143C68] font-bold text-sm">2</span>
                     </div>
                     <p className="text-gray-700 text-base sm:text-lg flex-1">
-                      Four runner-up slots allocated by performance, maximum 2 teams per university
+                      Five runner-up slots allocated by performance, maximum 2 teams per university
                     </p>
                   </li>
                 </ul>

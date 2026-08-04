@@ -73,14 +73,9 @@ export default function WhatIsICPCSection() {
                 <div className="w-10 h-10 sm:w-12 sm:h-12 bg-[#FDBC1D] rounded-xl sm:rounded-2xl flex items-center justify-center">
                   <FaRocket className="w-6 h-6 sm:w-8 sm:h-8 text-[#143C68]" />
                 </div>
-                <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white">Sri Lanka Joins the Map</h3>
+                <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white">Competition Overview</h3>
               </div>
-              
-              <p className="text-base sm:text-lg md:text-xl mb-6 sm:mb-8 md:mb-10 text-white/95 leading-relaxed">
-                In 2026, <span className="text-[#FDBC1D] font-bold text-xl sm:text-2xl">Sri Lanka makes history</span> as 
-                we host our first-ever ICPC contest. This is your chance to be a pioneer.
-              </p>
-              
+
               <div className="space-y-4">
                 {/* Step 1: National Contest */}
                 <div className="bg-white/5 backdrop-blur-sm rounded-xl p-4 border border-white/10">
@@ -122,7 +117,7 @@ export default function WhatIsICPCSection() {
                         <FaMedal className="w-4 h-4 text-[#FDBC1D]" />
                       </div>
                       <div>
-                        <p className="font-bold text-white text-base sm:text-lg">🥈 Four Runner-Up Teams</p>
+                        <p className="font-bold text-white text-base sm:text-lg">🥈 Five Runner-Up Teams</p>
                         <p className="text-white/80 text-xs sm:text-sm">Via regional contest</p>
                       </div>
                     </div>

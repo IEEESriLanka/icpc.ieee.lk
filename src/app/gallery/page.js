@@ -1,6 +1,5 @@
 'use client';
 
-import Link from 'next/link';
 import { FadeIn, ScaleIn } from '@/components/AnimatedSection';
 
 const EVENT_ALBUM_URL = 'https://drive.google.com/drive/folders/1m0BICEznbYXErQ8njB8lrKbIP63ttUHt?usp=drive_link';
@@ -27,10 +26,10 @@ export default function Gallery() {
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <FadeIn>
             <div className="text-center bg-white rounded-2xl sm:rounded-3xl shadow-xl p-8 sm:p-10 md:p-14">
-              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4 sm:mb-6 px-4">Official Event Album</h2>
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4 sm:mb-6 px-4">ICPC 2025/26 Official Event Album</h2>
               <div className="h-2 w-20 sm:w-24 bg-[#FDBC1D] mx-auto mb-6 sm:mb-8 rounded-full"></div>
               <p className="text-lg sm:text-xl md:text-2xl text-[#143C68] font-semibold px-4 max-w-3xl mx-auto">
-                Explore our official ICPC Sri Lanka event photo album.
+                Explore ICPC Sri Lanka 2025/26 event photo album.
               </p>
               <a
                 href={EVENT_ALBUM_URL}
@@ -49,17 +48,14 @@ export default function Gallery() {
       <FadeIn>
         <section className="py-12 sm:py-16 md:py-24 bg-[#FDBC1D]">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#143C68] mb-6 sm:mb-8 px-4">Be Part of ICPC Sri Lanka 2025/2026</h2>
-            <p className="text-lg sm:text-xl md:text-2xl text-[#143C68] mb-8 sm:mb-10 md:mb-12 font-semibold px-4">
-              Create your own memories at Sri Lanka&apos;s first ICPC competition
-            </p>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#143C68] mb-6 sm:mb-8 px-4">Be Part of ICPC Sri Lanka 2026/2027</h2>
             <ScaleIn delay={0.3}>
-              <Link
-                href="/registration"
-                className="inline-block bg-[#143C68] text-white px-8 sm:px-10 md:px-12 py-3 sm:py-4 rounded-xl sm:rounded-2xl font-bold text-base sm:text-lg md:text-xl hover:bg-[#1e4a7a] transition-all duration-300 hover:-translate-y-1 shadow-xl hover:shadow-2xl w-full sm:w-auto"
+              <button
+                disabled
+                className="inline-block bg-gray-500 text-white px-8 sm:px-10 md:px-12 py-3 sm:py-4 rounded-xl sm:rounded-2xl font-bold text-base sm:text-lg md:text-xl cursor-not-allowed opacity-60 w-full sm:w-auto"
               >
                 Register Your Team
-              </Link>
+              </button>
             </ScaleIn>
           </div>
         </section>

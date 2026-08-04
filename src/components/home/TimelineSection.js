@@ -21,7 +21,7 @@ export default function TimelineSection() {
           <div className="space-y-12">
             <FadeInLeft delay={0.1}>
               <TimelineCard
-                date="11th November 2025"
+                date="TBD"
                 title="Registrations Open"
                 align="left"
                 color="bg-[#143C68]"
@@ -29,7 +29,7 @@ export default function TimelineSection() {
             </FadeInLeft>
             <FadeInRight delay={0.2}>
               <TimelineCard
-                date="30th December 2025"
+                date="TBD"
                 title="Registrations Close"
                 align="right"
                 color="bg-[#143C68]"
@@ -37,7 +37,7 @@ export default function TimelineSection() {
             </FadeInRight>
             <FadeInLeft delay={0.3}>
               <TimelineCard
-                date="4th January 2026"
+                date="TBD"
                 title="Online Round"
                 align="left"
                 color="bg-[#143C68]"
@@ -45,7 +45,7 @@ export default function TimelineSection() {
             </FadeInLeft>
             <FadeInRight delay={0.4}>
               <TimelineCard
-                date="25th January 2026"
+                date="TBD"
                 title="Sri Lanka Onsite Regional"
                 align="right"
                 color="bg-[#FDBC1D]"
@@ -54,7 +54,7 @@ export default function TimelineSection() {
             </FadeInRight>
             <FadeInLeft delay={0.5}>
               <TimelineCard
-                date="March 2026"
+                date="TBD"
                 title="ICPC Asia West"
                 align="left"
                 color="bg-[#B22E1B]"
@@ -62,7 +62,7 @@ export default function TimelineSection() {
             </FadeInLeft>
             <FadeInRight delay={0.6}>
               <TimelineCard
-                date="August 2026"
+                date="TBD"
                 title="ICPC World Finals"
                 align="right"
                 color="bg-red-500"
