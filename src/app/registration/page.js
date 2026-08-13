@@ -41,14 +41,10 @@ export default function Registration() {
           ></div>
           <div className="absolute inset-0 bg-[#143C68]/90"></div>
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-            <div className="inline-flex items-center gap-2 bg-[#FDBC1D] text-[#143C68] px-4 py-2 rounded-full font-bold text-sm mb-6">
-              <FaTrophy className="w-4 h-4" />
-              EVENT CONCLUDED
-            </div>
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-bold mb-6 sm:mb-8 text-white px-4">Registration</h1>
             <div className="h-2 w-20 sm:w-24 bg-[#FDBC1D] mx-auto mb-8 sm:mb-10 rounded-full"></div>
             <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-[#FDBC1D] font-semibold max-w-4xl mx-auto px-4">
-              ICPC Sri Lanka 2025/26 has concluded. Thank you to all participants!
+              Registration for ICPC Sri Lanka 2026/2027 opens 15th August 2026.
             </p>
           </div>
         </section>
@@ -119,19 +115,6 @@ export default function Registration() {
                 ]}
               />
             </StaggerItem>
-
-            <StaggerItem>
-              <RequirementCard
-                icon={<FaMoneyBill className="w-8 h-8" />}
-                title="Registration Fee"
-                items={[
-                  'For Sri Lankan Teams - LKR 2,000 per team (Onsite Round)',
-                  'For International Teams - USD 300 per team (Onsite Round)',
-                  'Covers meals on contest day',
-                  'Covers event logistics',
-                ]}
-              />
-            </StaggerItem>
           </StaggerContainer>
         </div>
       </section>
@@ -152,7 +135,7 @@ export default function Registration() {
               <InfoItem
                 icon={<FaCalendar className="w-6 h-6" />}
                 title="Registration Opens"
-                content="11th November 2025"
+                content="15th August 2026"
               />
               <InfoItem
                 icon={<FaBuilding className="w-6 h-6" />}
@@ -237,7 +220,7 @@ export default function Registration() {
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">Stay Connected</h2>
             <div className="h-2 w-24 bg-[#FDBC1D] mx-auto mb-8 rounded-full"></div>
             <p className="text-xl md:text-2xl text-white/90 mb-10 max-w-2xl mx-auto">
-              Follow us on social media for the latest updates, announcements, and important information about <br/>ICPC Sri Lanka 2025/2026
+              Follow us on social media for the latest updates, announcements, and important information about <br/>ICPC Sri Lanka 2026/2027
             </p>
           </FadeIn>
           <FadeIn delay={0.2}>
@@ -313,35 +296,6 @@ export default function Registration() {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <FadeIn>
-        <section className="py-24 bg-[#FDBC1D]">
-          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 className="text-5xl md:text-6xl font-bold text-[#143C68] mb-8">Event Concluded</h2>
-            <p className="text-2xl text-[#143C68] font-semibold mb-12">
-              ICPC Sri Lanka 2025/26 has successfully concluded. View the results!
-            </p>
-            <div className="flex flex-col sm:flex-row gap-6 justify-center">
-              <ScaleIn delay={0.3}>
-                <Link
-                  href="/winners"
-                  className="inline-block bg-[#143C68] text-white px-12 py-4 rounded-2xl text-xl font-bold hover:bg-[#1e4a7a] transition-all duration-300 hover:-translate-y-1 shadow-xl hover:shadow-2xl"
-                >
-                  View Results
-                </Link>
-              </ScaleIn>
-              <ScaleIn delay={0.5}>
-                <Link
-                  href="/"
-                  className="inline-block bg-white text-[#143C68] px-12 py-4 rounded-2xl text-xl font-bold hover:bg-gray-100 transition-all duration-300 hover:-translate-y-1 shadow-xl hover:shadow-2xl"
-                >
-                  Back to Home
-                </Link>
-              </ScaleIn>
-            </div>
-          </div>
-        </section>
-      </FadeIn>
     </main>
   );
 }
@@ -364,14 +318,10 @@ function RegistrationTabs() {
           Preliminary Online Round
         </button>
         <button
-          onClick={() => setActiveTab('regional')}
-          className={`px-4 sm:px-6 md:px-8 py-3 sm:py-4 text-base sm:text-lg md:text-xl font-bold rounded-t-xl sm:rounded-t-2xl transition-all duration-300 ${
-            activeTab === 'regional'
-              ? 'bg-[#143C68] text-white border-b-4 border-[#FDBC1D]'
-              : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
-          }`}
+          disabled
+          className="px-4 sm:px-6 md:px-8 py-3 sm:py-4 text-base sm:text-lg md:text-xl font-bold rounded-t-xl sm:rounded-t-2xl bg-gray-100 text-gray-400 cursor-not-allowed opacity-60"
         >
-          Regional Onsite Round
+          Regional Onsite Round <span className="text-xs sm:text-sm font-semibold">(Coming Soon)</span>
         </button>
       </div>
 
@@ -389,7 +339,20 @@ function PreliminaryRegistrationContent() {
       <div className="space-y-6">
         <RegistrationInfoPoint
           icon={<FaFileAlt className="w-6 h-6" />}
-          text="Register locally using the official Google Form provided."
+          text={
+            <>
+              Register locally using the{' '}
+              <a
+                href="https://forms.gle/aT5KV7kHCW5QkDrF9"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#143C68] font-bold underline hover:text-[#FDBC1D] transition-colors"
+              >
+                official Google Form
+              </a>
+              {' '}provided.
+            </>
+          }
         />
         <RegistrationInfoPoint
           icon={<FaGlobe className="w-6 h-6" />}
@@ -410,28 +373,14 @@ function PreliminaryRegistrationContent() {
       </div>
       
       <div className="pt-6 sm:pt-8 border-t-2 border-gray-200 space-y-4">
-        <button
-          disabled
-          className="w-full sm:w-auto px-8 sm:px-12 py-3 sm:py-4 bg-gray-400 text-white rounded-xl sm:rounded-2xl text-base sm:text-lg md:text-xl font-bold cursor-not-allowed opacity-60"
+        <a
+          href="https://forms.gle/aT5KV7kHCW5QkDrF9"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 sm:px-12 py-3 sm:py-4 bg-[#143C68] text-white rounded-xl sm:rounded-2xl text-base sm:text-lg md:text-xl font-bold hover:bg-[#1e4a7a] transition-all duration-300 hover:-translate-y-1 shadow-lg hover:shadow-2xl"
         >
-          Registration Closed
-        </button>
-
-        <div className="flex items-center gap-3">
-          <div className="h-px flex-1 bg-gray-300"></div>
-          <span className="text-sm text-gray-500 font-medium">or</span>
-          <div className="h-px flex-1 bg-gray-300"></div>
-        </div>
-
-        <div className="flex justify-center">
-          <Link
-            href="/winners"
-            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 sm:px-12 py-3 sm:py-4 bg-[#FDBC1D] text-[#143C68] rounded-xl sm:rounded-2xl text-base sm:text-lg md:text-xl font-bold hover:bg-[#143C68] hover:text-white transition-all duration-300 hover:-translate-y-1 shadow-lg hover:shadow-2xl"
-          >
-            <FaTrophy className="w-5 h-5" />
-            View Contest Results
-          </Link>
-        </div>
+          Register Now
+        </a>
       </div>
     </div>
   );
