@@ -50,12 +50,14 @@ export default function Gallery() {
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#143C68] mb-6 sm:mb-8 px-4">Be Part of ICPC Sri Lanka 2026/2027</h2>
             <ScaleIn delay={0.3}>
-              <button
-                disabled
-                className="inline-block bg-gray-500 text-white px-8 sm:px-10 md:px-12 py-3 sm:py-4 rounded-xl sm:rounded-2xl font-bold text-base sm:text-lg md:text-xl cursor-not-allowed opacity-60 w-full sm:w-auto"
+              <a
+                href="https://forms.gle/aT5KV7kHCW5QkDrF9"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block bg-[#143C68] text-white px-8 sm:px-10 md:px-12 py-3 sm:py-4 rounded-xl sm:rounded-2xl font-bold text-base sm:text-lg md:text-xl hover:bg-[#1e4a7a] transition-all duration-300 hover:-translate-y-1 shadow-xl hover:shadow-2xl w-full sm:w-auto text-center"
               >
                 Register Your Team
-              </button>
+              </a>
             </ScaleIn>
           </div>
         </section>

@@ -139,15 +139,17 @@ export default function About() {
             </p>
           </FadeIn>
           <ScaleIn delay={0.3}>
-            <button
-              disabled
-              className="inline-flex items-center gap-2 sm:gap-3 bg-gray-400 text-white px-8 sm:px-12 py-4 sm:py-6 rounded-2xl sm:rounded-3xl text-lg sm:text-xl md:text-2xl font-bold cursor-not-allowed opacity-60"
+            <a
+              href="https://forms.gle/aT5KV7kHCW5QkDrF9"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 sm:gap-3 bg-[#143C68] text-white px-8 sm:px-12 py-4 sm:py-6 rounded-2xl sm:rounded-3xl text-lg sm:text-xl md:text-2xl font-bold hover:bg-[#1e4a7a] transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105"
             >
               Register Your Team
               <svg className="w-5 h-5 sm:w-6 sm:h-6 md:w-8 md:h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>
-            </button>
+            </a>
           </ScaleIn>
         </div>
       </section>

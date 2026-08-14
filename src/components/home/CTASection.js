@@ -36,14 +36,16 @@ export default function CTASection() {
 
         <ScaleIn delay={0.6}>
           <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-center w-full sm:w-auto">
-            <button
-              disabled
-              className="relative inline-flex items-center gap-3 sm:gap-4 bg-gray-400 text-white px-8 sm:px-12 md:px-16 py-4 sm:py-6 md:py-8 rounded-2xl sm:rounded-3xl text-lg sm:text-xl md:text-2xl font-bold cursor-not-allowed opacity-60 w-full sm:w-auto justify-center"
+            <a
+              href="https://forms.gle/aT5KV7kHCW5QkDrF9"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="relative inline-flex items-center gap-3 sm:gap-4 bg-[#143C68] text-white px-8 sm:px-12 md:px-16 py-4 sm:py-6 md:py-8 rounded-2xl sm:rounded-3xl text-lg sm:text-xl md:text-2xl font-bold hover:bg-[#1e4a7a] transition-all duration-300 shadow-2xl transform hover:scale-105 w-full sm:w-auto justify-center"
             >
               <FaRocket className="w-5 h-5 sm:w-6 sm:h-6 md:w-8 md:h-8" />
               <span>Register Your Team Now</span>
               <ArrowRightIcon className="w-5 h-5 sm:w-6 sm:h-6 md:w-8 md:h-8" />
-            </button>
+            </a>
 
             <Link
               href="/about"

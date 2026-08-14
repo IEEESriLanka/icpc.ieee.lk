@@ -220,12 +220,14 @@ export default function FAQ() {
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#143C68] mb-6 sm:mb-8 px-4">Ready to Register?</h2>
             <ScaleIn delay={0.3}>
-              <button
-                disabled
-                className="inline-block bg-gray-400 text-white px-8 sm:px-10 md:px-12 py-3 sm:py-4 rounded-xl sm:rounded-2xl text-base sm:text-lg md:text-xl font-bold cursor-not-allowed opacity-60 w-full sm:w-auto"
+              <a
+                href="https://forms.gle/aT5KV7kHCW5QkDrF9"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block bg-[#143C68] text-white px-8 sm:px-10 md:px-12 py-3 sm:py-4 rounded-xl sm:rounded-2xl text-base sm:text-lg md:text-xl font-bold hover:bg-[#1e4a7a] transition-all duration-300 hover:-translate-y-1 shadow-xl hover:shadow-2xl w-full sm:w-auto text-center"
               >
                 Registration Details
-              </button>
+              </a>
             </ScaleIn>
           </div>
         </section>

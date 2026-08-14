@@ -1,8 +1,6 @@
 'use client';
 
-import Link from 'next/link';
-
-import { 
+import {
   FaEdit, 
   FaLaptopCode, 
   FaTrophy, 
@@ -56,9 +54,8 @@ export default function Timeline() {
                       'Find a faculty coach',
                       'Register online'
                     ]}
-                    registrationLink="/registration"
+                    registrationLink="https://forms.gle/aT5KV7kHCW5QkDrF9"
                     registrationText="Proceed to Online Registration"
-                    registrationDisabled={true}
                   />
                 </StaggerItem>
 
@@ -89,9 +86,8 @@ export default function Timeline() {
                       'Get familiar with contest platform',
                       'Warm up with your team'
                     ]}
-                    registrationLink="/registration"
+                    registrationLink="https://forms.gle/aT5KV7kHCW5QkDrF9"
                     registrationText="Proceed to Online Registration"
-                    registrationDisabled={true}
                   />
                 </StaggerItem>
 
@@ -180,15 +176,17 @@ export default function Timeline() {
             <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 sm:mb-8 px-4">Don&apos;t Miss Out!</h2>
           </FadeIn>
           <ScaleIn delay={0.3}>
-            <button
-              disabled
-              className="inline-flex items-center gap-2 sm:gap-3 bg-gray-400 text-white px-8 sm:px-12 py-4 sm:py-6 rounded-2xl sm:rounded-3xl text-lg sm:text-xl md:text-2xl font-bold cursor-not-allowed opacity-60"
+            <a
+              href="https://forms.gle/aT5KV7kHCW5QkDrF9"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 sm:gap-3 bg-[#FDBC1D] text-[#143C68] px-8 sm:px-12 py-4 sm:py-6 rounded-2xl sm:rounded-3xl text-lg sm:text-xl md:text-2xl font-bold hover:bg-[#e6a91a] transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105"
             >
               Registration Details
               <svg className="w-5 h-5 sm:w-6 sm:h-6 md:w-8 md:h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>
-            </button>
+            </a>
           </ScaleIn>
         </div>
       </section>
@@ -237,15 +235,17 @@ function TimelineEvent({ date, title, description, icon, color, highlight, actio
                 </svg>
               </button>
             ) : (
-              <Link
+              <a
                 href={registrationLink}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-[#143C68] text-white px-6 sm:px-8 py-3 sm:py-4 rounded-xl sm:rounded-2xl text-base sm:text-lg font-bold hover:bg-[#1e4a7a] transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1"
               >
                 {registrationText}
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                 </svg>
-              </Link>
+              </a>
             )}
           </div>
         )}
