@@ -112,16 +112,14 @@ export default function HeroSection() {
 
             <SlideInBottom delay={1.2} duration={0.8}>
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center w-full max-w-3xl mx-auto mb-8 sm:mb-12 px-4">
-                <a
-                  href="https://forms.gle/aT5KV7kHCW5QkDrF9"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <Link
+                  href="/registration"
                   className="relative inline-flex items-center justify-center gap-2 sm:gap-3 bg-[#FDBC1D] text-[#143C68] px-6 sm:px-10 py-3 sm:py-4 rounded-2xl text-lg sm:text-xl font-bold hover:bg-[#e6a91a] transition-all duration-300 shadow-2xl transform hover:scale-105 w-full sm:w-auto"
                 >
                   <FaRocket className="w-4 h-4 sm:w-5 sm:h-5" />
                   <span>Register Now</span>
                   <ArrowRightIcon className="w-4 h-4 sm:w-5 sm:h-5" />
-                </a>
+                </Link>
                 <Link
                   href="/about"
                   className="group inline-flex items-center justify-center gap-2 sm:gap-3 bg-white/20 backdrop-blur-md border border-white/30 text-white px-6 sm:px-10 py-3 sm:py-4 rounded-2xl text-lg sm:text-xl font-bold hover:bg-white hover:text-[#143C68] transition-all duration-300 shadow-2xl transform hover:scale-105 w-full sm:w-auto"

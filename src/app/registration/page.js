@@ -544,12 +544,14 @@ function RegionalRegistrationContent() {
       </div>
       
       <div className="pt-6 sm:pt-8 border-t-2 border-gray-200 space-y-4">
-        <button
-          disabled
-          className="w-full sm:w-auto px-8 sm:px-12 py-3 sm:py-4 bg-gray-400 text-white rounded-xl sm:rounded-2xl text-base sm:text-lg md:text-xl font-bold cursor-not-allowed opacity-60"
+        <a
+          href="https://forms.gle/aT5KV7kHCW5QkDrF9"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="w-full sm:w-auto inline-flex items-center justify-center px-8 sm:px-12 py-3 sm:py-4 bg-[#143C68] text-white rounded-xl sm:rounded-2xl text-base sm:text-lg md:text-xl font-bold hover:bg-[#1e4a7a] transition-all duration-300 hover:-translate-y-1 shadow-lg hover:shadow-2xl"
         >
-          Registration Closed
-        </button>
+          Register Now
+        </a>
 
         <div className="flex items-center gap-3">
           <div className="h-px flex-1 bg-gray-300"></div>
