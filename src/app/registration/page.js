@@ -9,8 +9,7 @@ import {
   FaGraduationCap, 
   FaCalendar, 
   FaBuilding, 
-  FaLaptop, 
-  FaMapMarkerAlt, 
+  FaLaptop,
   FaEnvelope,
   FaClock,
   FaWifi,
@@ -19,7 +18,6 @@ import {
   FaFileAlt,
   FaWhatsapp,
   FaGlobe,
-  FaLightbulb,
   FaCheckCircle,
   FaFacebook,
   FaLinkedin,
@@ -148,32 +146,9 @@ export default function Registration() {
                 content="C, C++, Java, Python, and other ICPC-approved languages"
               />
               <InfoItem
-                icon={<FaMapMarkerAlt className="w-6 h-6" />}
-                title="Contest Location"
-                content="University of Peradeniya, Sri Lanka."
-              />
-              <InfoItem
                 icon={<FaEnvelope className="w-6 h-6" />}
                 title="Contact"
                 content="For questions, contact ICPC Sri Lanka organizing committee"
-              />
-              <InfoItem
-                icon={<FaFileAlt className="w-6 h-6" />}
-                title="Team Reference Document (TRD)"
-                content={
-                  <>
-                    Click{' '}
-                    <a
-                      href="https://drive.google.com/file/d/1HvHcxytX4ZLKvcU25Nfck1G4LXVVEEHL/view?usp=sharing"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-[#143C68] font-bold underline hover:text-[#FDBC1D] transition-colors"
-                    >
-                      here
-                    </a>
-                    {' '}to view the Team Reference Document (TRD) guidelines
-                  </>
-                }
               />
               <InfoItem
                 icon={<FaTrophy className="w-6 h-6" />}
@@ -187,24 +162,6 @@ export default function Registration() {
                       Click here
                     </Link>
                     {' '}to view detailed selection criteria and advancement rules to higher ICPC levels
-                  </>
-                }
-              />
-              <InfoItem
-                icon={<FaLightbulb className="w-6 h-6" />}
-                title="Online Preliminary Contest Guidelines"
-                content={
-                  <>
-                    Click{' '}
-                    <a
-                      href="https://drive.google.com/file/d/1rs1i6NcaWLWyGWoYKaSaJOS4y_40SzsN/view?usp=drivesdk"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-[#143C68] font-bold underline hover:text-[#FDBC1D] transition-colors"
-                    >
-                      here
-                    </a>
-                    {' '}to view the Online Preliminary Contest Guidelines
                   </>
                 }
               />

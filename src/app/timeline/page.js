@@ -1,9 +1,10 @@
 'use client';
 
+import Link from 'next/link';
 import {
-  FaEdit, 
-  FaLaptopCode, 
-  FaTrophy, 
+  FaEdit,
+  FaLaptopCode,
+  FaTrophy,
   FaGlobeAsia,
   FaCheckCircle
 } from 'react-icons/fa';
@@ -44,7 +45,7 @@ export default function Timeline() {
               <div className="space-y-12">
                 <StaggerItem>
                   <TimelineEvent
-                    date="TBD"
+                    date="15th August 2026"
                     title="Registrations Open"
                     description="Team registration opens for universities across Sri Lanka. Form your team of 3 students and find a faculty coach to register."
                     icon={<FaEdit className="w-8 h-8" />}
@@ -54,7 +55,7 @@ export default function Timeline() {
                       'Find a faculty coach',
                       'Register online'
                     ]}
-                    registrationLink="https://forms.gle/aT5KV7kHCW5QkDrF9"
+                    registrationLink="/registration"
                     registrationText="Proceed to Online Registration"
                   />
                 </StaggerItem>
@@ -86,7 +87,7 @@ export default function Timeline() {
                       'Get familiar with contest platform',
                       'Warm up with your team'
                     ]}
-                    registrationLink="https://forms.gle/aT5KV7kHCW5QkDrF9"
+                    registrationLink="/registration"
                     registrationText="Proceed to Online Registration"
                   />
                 </StaggerItem>
@@ -157,7 +158,7 @@ export default function Timeline() {
           <ScaleIn delay={0.2}>
             <div className="bg-[#FDBC1D] rounded-2xl sm:rounded-3xl p-6 sm:p-8 md:p-12 shadow-2xl">
               <div className="space-y-4 sm:space-y-6">
-                <QuickDate date="TBD" event="Registrations Open" />
+                <QuickDate date="15th August 2026" event="Registrations Open" />
                 <QuickDate date="TBD" event="Registrations Close" />
                 <QuickDate date="TBD" event="Preliminary Online Round" />
                 <QuickDate date="TBD" event="Sri Lanka Onsite Regional" highlight={true} />
@@ -224,33 +225,53 @@ function TimelineEvent({ date, title, description, icon, color, highlight, actio
         {/* Registration Button */}
         {registrationLink && (
           <div className="mt-6 pt-6 border-t-2 border-gray-200">
-            {registrationDisabled ? (
-              <button
-                disabled
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-gray-400 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-xl sm:rounded-2xl text-base sm:text-lg font-bold cursor-not-allowed opacity-60"
-              >
-                {registrationText}
-                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                </svg>
-              </button>
-            ) : (
-              <a
-                href={registrationLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-[#143C68] text-white px-6 sm:px-8 py-3 sm:py-4 rounded-xl sm:rounded-2xl text-base sm:text-lg font-bold hover:bg-[#1e4a7a] transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1"
-              >
-                {registrationText}
-                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                </svg>
-              </a>
-            )}
+            <RegistrationButton
+              link={registrationLink}
+              text={registrationText}
+              disabled={registrationDisabled}
+            />
           </div>
         )}
       </div>
     </div>
+  );
+}
+
+function RegistrationButton({ link, text, disabled }) {
+  const className = "w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-[#143C68] text-white px-6 sm:px-8 py-3 sm:py-4 rounded-xl sm:rounded-2xl text-base sm:text-lg font-bold hover:bg-[#1e4a7a] transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1";
+  const arrow = (
+    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+    </svg>
+  );
+
+  if (disabled) {
+    return (
+      <button
+        type="button"
+        disabled
+        className={`${className} bg-gray-400 cursor-not-allowed opacity-60 hover:bg-gray-400 hover:translate-y-0`}
+      >
+        {text}
+        {arrow}
+      </button>
+    );
+  }
+
+  if (link.startsWith('/')) {
+    return (
+      <Link href={link} className={className}>
+        {text}
+        {arrow}
+      </Link>
+    );
+  }
+
+  return (
+    <a href={link} target="_blank" rel="noopener noreferrer" className={className}>
+      {text}
+      {arrow}
+    </a>
   );
 }
 
