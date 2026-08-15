@@ -21,7 +21,7 @@ export default function TimelineSection() {
           <div className="space-y-12">
             <FadeInLeft delay={0.1}>
               <TimelineCard
-                date="TBD"
+                date="15th August 2026"
                 title="Registrations Open"
                 align="left"
                 color="bg-[#143C68]"
