@@ -1,10 +1,69 @@
 'use client';
 
 import Image from 'next/image';
-import { FaTrophy, FaMedal, FaGlobeAsia, FaGlobeAmericas } from 'react-icons/fa';
+import { useState } from 'react';
+import { FaTrophy, FaMedal, FaGlobeAsia, FaGlobeAmericas, FaHourglassHalf } from 'react-icons/fa';
 import { FadeIn, ScaleIn, StaggerContainer, StaggerItem } from '@/components/AnimatedSection';
 
+const seasons = [
+  { id: '2025-26', label: 'ICPC Sri Lanka Winners 25/26' },
+  { id: '2026-27', label: 'ICPC Sri Lanka Winners 26/27' },
+];
+
 export default function WinnersPage() {
+  const [activeSeason, setActiveSeason] = useState('2025-26');
+
+  return (
+    <main className="min-h-screen bg-gradient-to-br from-white via-gray-50 to-white">
+      {/* Hero Section */}
+      <section className="relative py-16 sm:py-20 md:py-24 bg-[#143C68] overflow-hidden">
+        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+          <div className="absolute top-20 left-10 w-64 h-64 bg-[#FDBC1D]/10 rounded-full blur-3xl"></div>
+          <div className="absolute bottom-20 right-10 w-64 h-64 bg-white/5 rounded-full blur-3xl"></div>
+        </div>
+
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <FadeIn>
+            <div className="text-center">
+              <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-4 sm:mb-6">
+                ICPC Sri Lanka
+              </h1>
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#FDBC1D] mb-4">
+                Regional Onsite Round Results
+              </h2>
+              <div className="flex items-center justify-center gap-2 sm:gap-3">
+                <div className="h-1 w-12 sm:w-16 bg-[#FDBC1D]/50 rounded-full"></div>
+                <div className="h-2 w-16 sm:w-24 bg-[#FDBC1D] rounded-full"></div>
+                <div className="h-1 w-12 sm:w-16 bg-[#FDBC1D]/50 rounded-full"></div>
+              </div>
+
+              {/* Season Tabs */}
+              <div className="mt-8 sm:mt-10 flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-3 sm:gap-4">
+                {seasons.map((season) => (
+                  <button
+                    key={season.id}
+                    onClick={() => setActiveSeason(season.id)}
+                    className={`px-5 sm:px-8 py-3 sm:py-4 rounded-xl sm:rounded-2xl text-sm sm:text-base md:text-lg font-bold transition-all duration-300 shadow-lg ${
+                      activeSeason === season.id
+                        ? 'bg-[#FDBC1D] text-[#143C68] shadow-xl'
+                        : 'bg-white/10 text-white hover:bg-white/20 border-2 border-white/30'
+                    }`}
+                  >
+                    {season.label}
+                  </button>
+                ))}
+              </div>
+            </div>
+          </FadeIn>
+        </div>
+      </section>
+
+      {activeSeason === '2025-26' ? <Season2025Results /> : <SeasonAwaitingResults />}
+    </main>
+  );
+}
+
+function Season2025Results() {
   const topResults = [
     { rank: 'Champions', team: 'Team Glory', university: 'SLIIT, Sri Lanka', image: '/winner/01_TeamGlory.jpg', medal: 'gold' },
     { rank: '1st Runners-Up', team: 'TLEMora', university: 'University of Moratuwa', image: '/winner/02_Telemora.jpg', medal: 'silver' },
@@ -31,32 +90,14 @@ export default function WinnersPage() {
   ];
 
   return (
-    <main className="min-h-screen bg-gradient-to-br from-white via-gray-50 to-white">
-      {/* Hero Section */}
-      <section className="relative py-16 sm:py-20 md:py-24 bg-[#143C68] overflow-hidden">
-        <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <div className="absolute top-20 left-10 w-64 h-64 bg-[#FDBC1D]/10 rounded-full blur-3xl"></div>
-          <div className="absolute bottom-20 right-10 w-64 h-64 bg-white/5 rounded-full blur-3xl"></div>
-        </div>
-
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <>
+      {/* Season Badge */}
+      <section className="pt-10 sm:pt-14">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <FadeIn>
-            <div className="text-center">
-              <div className="inline-flex items-center gap-2 bg-[#FDBC1D] text-[#143C68] px-4 py-2 rounded-full font-bold text-sm mb-6">
-                <FaTrophy className="w-4 h-4" />
-                CONTEST CONCLUDED
-              </div>
-              <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-4 sm:mb-6">
-                ICPC Sri Lanka 2025/26
-              </h1>
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#FDBC1D] mb-4">
-                Regional Onsite Round Results
-              </h2>
-              <div className="flex items-center justify-center gap-2 sm:gap-3">
-                <div className="h-1 w-12 sm:w-16 bg-[#FDBC1D]/50 rounded-full"></div>
-                <div className="h-2 w-16 sm:w-24 bg-[#FDBC1D] rounded-full"></div>
-                <div className="h-1 w-12 sm:w-16 bg-[#FDBC1D]/50 rounded-full"></div>
-              </div>
+            <div className="inline-flex items-center gap-2 bg-[#FDBC1D] text-[#143C68] px-4 py-2 rounded-full font-bold text-sm">
+              <FaTrophy className="w-4 h-4" />
+              ICPC SRI LANKA 2025/26 &mdash; CONTEST CONCLUDED
             </div>
           </FadeIn>
         </div>
@@ -235,6 +276,29 @@ export default function WinnersPage() {
           </FadeIn>
         </div>
       </section>
-    </main>
+    </>
+  );
+}
+
+function SeasonAwaitingResults() {
+  return (
+    <section className="py-16 sm:py-20 md:py-28">
+      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+        <ScaleIn>
+          <div className="bg-white rounded-3xl shadow-2xl p-8 sm:p-12 text-center border-t-8 border-[#FDBC1D]">
+            <div className="inline-flex items-center justify-center w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-[#143C68] text-[#FDBC1D] mb-6">
+              <FaHourglassHalf className="w-8 h-8 sm:w-10 sm:h-10" />
+            </div>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#143C68] mb-4">
+              Results Coming Soon
+            </h2>
+            <p className="text-base sm:text-lg text-gray-600 leading-relaxed">
+              The ICPC Sri Lanka 2026/27 Regional Onsite Round is yet to be held. Winners will be
+              published here as soon as the contest concludes.
+            </p>
+          </div>
+        </ScaleIn>
+      </div>
+    </section>
   );
 }

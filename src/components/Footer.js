@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { FaFacebook, FaWhatsapp, FaLinkedin, FaEnvelope, FaMapMarkerAlt, FaYoutube } from 'react-icons/fa';
-import { UserIcon, BuildingOfficeIcon } from '@heroicons/react/24/outline';
+import { UserIcon, BuildingOfficeIcon, BoltIcon } from '@heroicons/react/24/outline';
 
 export default function Footer() {
   return (
@@ -166,15 +166,67 @@ export default function Footer() {
                 </div>
                 <div>
                   <div className="text-xs font-bold text-[#143C68] uppercase tracking-wider mb-1">Organized by</div>
-                  <a 
-                    href="https://codex.ieee.lk"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-base sm:text-lg font-bold text-black hover:text-[#143C68] transition-colors leading-tight block"
-                  >
-                    IEEE CodeX Sri Lanka
-                  </a>
+                  <ul className="space-y-1.5">
+                    <li>
+                      <a
+                        href="https://codex.ieee.lk"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-base sm:text-lg font-bold text-black hover:text-[#143C68] transition-colors leading-tight block"
+                      >
+                        IEEE CodeX Sri Lanka
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://aces.ce.pdn.ac.lk/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-base sm:text-lg font-bold text-black hover:text-[#143C68] transition-colors leading-tight block"
+                      >
+                        Association of Computer Engineering Students (ACES),
+                        <span className="block font-semibold text-sm sm:text-base">University of Peradeniya</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://iesl.lk/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-base sm:text-lg font-bold text-black hover:text-[#143C68] transition-colors leading-tight block"
+                      >
+                        Institution of Engineers, Sri Lanka (IESL)
+                      </a>
+                    </li>
+                  </ul>
                 </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Powered By */}
+          <div className="bg-white rounded-lg sm:rounded-xl p-4 sm:p-5 shadow-lg">
+            <div className="flex items-start gap-3 sm:gap-4">
+              <div className="bg-[#FDBC1D] p-2 sm:p-3 rounded-lg">
+                <BoltIcon className="w-6 h-6 sm:w-7 sm:h-7 text-[#143C68]" />
+              </div>
+              <div>
+                <div className="text-xs font-bold text-[#143C68] uppercase tracking-wider mb-2">Powered by</div>
+                <a
+                  href="https://www.ifs.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block transition-opacity hover:opacity-80"
+                  aria-label="IFS"
+                >
+                  <Image
+                    src="/ifs.png"
+                    alt="IFS"
+                    width={2095}
+                    height={974}
+                    className="h-9 sm:h-11 w-auto"
+                  />
+                </a>
               </div>
             </div>
           </div>

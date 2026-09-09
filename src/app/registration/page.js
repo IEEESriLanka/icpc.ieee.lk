@@ -113,6 +113,19 @@ export default function Registration() {
                 ]}
               />
             </StaggerItem>
+
+            <StaggerItem>
+              <RequirementCard
+                icon={<FaMoneyBill className="w-8 h-8" />}
+                title="Registration Fee"
+                items={[
+                  'Foreign Teams: 400 USD per team',
+                  'Local Teams: 5000 LKR per team',
+                  'The registration fee covers the costs associated with participating in the ICPC Sri Lanka Regional Onsite Round',
+                  'This fee is required only from teams selected to participate in the Regional Onsite Round. Participation in the online contest is completely free of charge'
+                ]}
+              />
+            </StaggerItem>
           </StaggerContainer>
         </div>
       </section>
@@ -275,10 +288,14 @@ function RegistrationTabs() {
           Preliminary Online Round
         </button>
         <button
-          disabled
-          className="px-4 sm:px-6 md:px-8 py-3 sm:py-4 text-base sm:text-lg md:text-xl font-bold rounded-t-xl sm:rounded-t-2xl bg-gray-100 text-gray-400 cursor-not-allowed opacity-60"
+          onClick={() => setActiveTab('regional')}
+          className={`px-4 sm:px-6 md:px-8 py-3 sm:py-4 text-base sm:text-lg md:text-xl font-bold rounded-t-xl sm:rounded-t-2xl transition-all duration-300 ${
+            activeTab === 'regional'
+              ? 'bg-[#143C68] text-white border-b-4 border-[#FDBC1D]'
+              : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
+          }`}
         >
-          Regional Onsite Round <span className="text-xs sm:text-sm font-semibold">(Coming Soon)</span>
+          Regional Onsite Round
         </button>
       </div>
 
@@ -484,49 +501,89 @@ function RegionalRegistrationContent() {
       <div className="space-y-6">
         <RegistrationInfoPoint
           icon={<FaTrophy className="w-6 h-6" />}
-          text="Teams qualifying from the online round must complete local registration for the onsite event."
+          text="Qualified teams from the Preliminary Online Round will be competing in the Regional Onsite Round."
         />
         <RegistrationInfoPoint
-          icon={<FaChalkboardTeacher className="w-6 h-6" />}
-          text="The coach must register the team on the ICPC Global Site for the regional round."
+          icon={<FaClock className="w-6 h-6" />}
+          text={
+            <>
+              The onsite round will be a <strong>5-hour coding competition</strong>, featuring{' '}
+              <strong>5&ndash;10 algorithmic problems</strong> designed to test your{' '}
+              <strong>logic, teamwork, and problem-solving skills</strong>.
+            </>
+          }
+        />
+        <RegistrationInfoPoint
+          icon={<FaWifi className="w-6 h-6" />}
+          text={
+            <>
+              The competition will be conducted <strong>offline</strong>, with{' '}
+              <strong>no internet access allowed</strong>.
+            </>
+          }
         />
         <RegistrationInfoPoint
           icon={<FaMoneyBill className="w-6 h-6" />}
-          text="Teams are required to pay the registration fee (LKR 2,000 for Sri Lankan teams, USD 300 for International teams) to confirm participation."
+          text={
+            <>
+              Eligible local teams are required to pay the registration fee of{' '}
+              <strong>LKR 5,000</strong> to confirm participation.
+            </>
+          }
+        />
+        <RegistrationInfoPoint
+          icon={<FaMoneyBill className="w-6 h-6" />}
+          text={
+            <>
+              Eligible Foreign teams are required to pay the registration fee of{' '}
+              <strong>USD 400</strong> to confirm participation.
+            </>
+          }
+        />
+        <RegistrationInfoPoint
+          icon={<FaUniversity className="w-6 h-6" />}
+          text={
+            <>
+              <span className="block mb-3">Account Details are as given below.</span>
+              <span className="block space-y-1.5">
+                <BankDetail label="Account Number" value="1001046226" />
+                <BankDetail label="Name of the Account" value="ICPC Sri Lanka" />
+                <BankDetail label="Bank / Branch Name" value="Commercial Bank of Ceylon PLC Peradeniya Branch" />
+                <BankDetail label="Bank Code / Branch Code" value="7056 / 073" />
+                <BankDetail label="Swift Code" value="CCEYLKLX" />
+              </span>
+            </>
+          }
         />
         <RegistrationInfoPoint
           icon={<FaEnvelope className="w-6 h-6" />}
-          text="Further details on payment and verification will be shared through official communication channels."
+          text={
+            <>
+              Further details regarding the venue, schedule, and rules will be{' '}
+              <strong>shared through official communication channels</strong>.
+            </>
+          }
         />
       </div>
-      
+
       <div className="pt-6 sm:pt-8 border-t-2 border-gray-200 space-y-4">
-        <a
-          href="https://forms.gle/aT5KV7kHCW5QkDrF9"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="w-full sm:w-auto inline-flex items-center justify-center px-8 sm:px-12 py-3 sm:py-4 bg-[#143C68] text-white rounded-xl sm:rounded-2xl text-base sm:text-lg md:text-xl font-bold hover:bg-[#1e4a7a] transition-all duration-300 hover:-translate-y-1 shadow-lg hover:shadow-2xl"
+        <button
+          disabled
+          className="w-full sm:w-auto inline-flex items-center justify-center px-8 sm:px-12 py-3 sm:py-4 bg-gray-400 text-white rounded-xl sm:rounded-2xl text-base sm:text-lg md:text-xl font-bold cursor-not-allowed opacity-60"
         >
           Register Now
-        </a>
-
-        <div className="flex items-center gap-3">
-          <div className="h-px flex-1 bg-gray-300"></div>
-          <span className="text-sm text-gray-500 font-medium">or</span>
-          <div className="h-px flex-1 bg-gray-300"></div>
-        </div>
-
-        <div className="flex justify-center">
-          <Link
-            href="/winners"
-            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 sm:px-12 py-3 sm:py-4 bg-[#FDBC1D] text-[#143C68] rounded-xl sm:rounded-2xl text-base sm:text-lg md:text-xl font-bold hover:bg-[#143C68] hover:text-white transition-all duration-300 hover:-translate-y-1 shadow-lg hover:shadow-2xl"
-          >
-            <FaTrophy className="w-5 h-5" />
-            View Contest Results
-          </Link>
-        </div>
+        </button>
       </div>
     </div>
+  );
+}
+
+function BankDetail({ label, value }) {
+  return (
+    <span className="block text-base sm:text-lg text-gray-700">
+      <span className="text-[#FDBC1D] font-bold mr-2">&bull;</span>
+      <strong>{label}</strong>: {value}
+    </span>
   );
 }
 
@@ -545,8 +602,8 @@ function PayRegistrationFeeCard() {
       
       <ul className="space-y-3 sm:space-y-4 mb-6 sm:mb-8">
         {[
-          'Registration fee: LKR 2,000 for Sri Lankan teams, USD 300 for International teams',
-          'Fee covers meals and logistics on contest day',
+          'Registration fee: LKR 5,000 for Sri Lankan teams, USD 400 for International teams',
+          'Fee covers the costs of the Regional Onsite Round',
           'Payment instructions will be provided after registration',
           'Secure your spot early!'
         ].map((detail, index) => (

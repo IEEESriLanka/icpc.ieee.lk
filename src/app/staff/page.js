@@ -1,9 +1,83 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import { useState } from 'react';
 import { FadeInUp } from '@/components/AnimatedSection';
 
-const staffMembers = [
+const committee2025 = [
+  {
+    name: "Dr. Upul Jayasinghe",
+    position: "Regional Director",
+    url: "http://people.ce.pdn.ac.lk/staff/academic/upul/"
+  },
+  {
+    name: "Mr. Dhammika Marasinghe",
+    position: "Deputy & Associate Director",
+    url: "https://lk.linkedin.com/in/dhammikamarasinghe"
+  },
+  {
+    name: "Prof. S. Vasanthapriyan",
+    position: "Advisory",
+    url: "https://www.sab.ac.lk/staff-directory/216"
+  },
+  {
+    name: "Prof. Roshan G. Ragel",
+    position: "Advisory",
+    url: "http://people.ce.pdn.ac.lk/staff/academic/roshan-ragel/"
+  },
+  {
+    name: "Dr. Hakim A. Usoof",
+    position: "Judging Chair",
+    url: "https://sci.pdn.ac.lk/scs/staff/Hakim-Usoof"
+  },
+  {
+    name: "Dr. Tharindu Weerakoon",
+    position: "Contest Chair",
+    url: "http://web2.ee.pdn.ac.lk/TharinduW"
+  },
+  {
+    name: "Mr. Biswajith Dissanayake",
+    position: "Technical Chair",
+    url: "http://people.ce.pdn.ac.lk/staff/academic/biswajith-dissanayake/"
+  },
+  {
+    name: "Mr. Thamindu Sri Nirmal",
+    position: "Communication Chair",
+    url: "https://www.linkedin.com/in/thamindu-nirmal"
+  },
+  {
+    name: "Ms. Yasodha Vimukthi",
+    position: "Communication Chair",
+    url: "http://people.ce.pdn.ac.lk/staff/academic/yasodha-vimukthi/"
+  },
+  {
+    name: "Mr. Dineth Palliyaguru",
+    position: "Communication Chair",
+    url: "https://www.linkedin.com/in/dineth-palliyaguru"
+  },
+  {
+    name: "Ms. Lithasa Jayamaha",
+    position: "Finance Manager",
+    url: "https://www.linkedin.com/in/lithasaj"
+  },
+  {
+    name: "Ms. Sarani",
+    position: "Volunteer Chair",
+    url: null
+  },
+  {
+    name: "Mr. Lasith",
+    position: "Volunteer Chair",
+    url: null
+  },
+  {
+    name: "Mr. Rashmi Virajitha",
+    position: "Volunteer Chair",
+    url: null
+  }
+];
+
+const committee2026 = [
   {
     name: "Dr. Upul Jayasinghe",
     position: "Regional Director",
@@ -16,12 +90,22 @@ const staffMembers = [
   }
 ];
 
+const committees = [
+  { id: '2025-26', label: 'Organizing Committee 25/26', members: committee2025 },
+  { id: '2026-27', label: 'Organizing Committee 26/27', members: committee2026 },
+];
+
 export default function StaffPage() {
+  const [activeCommittee, setActiveCommittee] = useState('2026-27');
+
+  const staffMembers =
+    committees.find((committee) => committee.id === activeCommittee)?.members ?? [];
+
   return (
     <main className="min-h-screen bg-white">
       {/* Hero Section */}
       <section className="relative py-20 sm:py-24 md:py-32 overflow-hidden">
-        <div 
+        <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
             backgroundImage: "url('/gallery/54766698584_76f21665d5_k.jpg')"
@@ -35,8 +119,25 @@ export default function StaffPage() {
             </h1>
             <div className="h-2 w-24 sm:w-32 bg-[#FDBC1D] mx-auto mb-6 sm:mb-8 rounded-full"></div>
             <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl text-center max-w-4xl mx-auto font-bold text-[#FDBC1D] px-4">
-              Meet the dedicated team behind <br /> ICPC Sri Lanka 2026/2027
+              Meet the dedicated team behind <br /> ICPC Sri Lanka
             </p>
+
+            {/* Committee Tabs */}
+            <div className="mt-8 sm:mt-10 flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-3 sm:gap-4 px-4">
+              {committees.map((committee) => (
+                <button
+                  key={committee.id}
+                  onClick={() => setActiveCommittee(committee.id)}
+                  className={`px-5 sm:px-8 py-3 sm:py-4 rounded-xl sm:rounded-2xl text-sm sm:text-base md:text-lg font-bold transition-all duration-300 shadow-lg ${
+                    activeCommittee === committee.id
+                      ? 'bg-[#FDBC1D] text-[#143C68] shadow-xl'
+                      : 'bg-white/10 text-white hover:bg-white/20 border-2 border-white/30'
+                  }`}
+                >
+                  {committee.label}
+                </button>
+              ))}
+            </div>
           </FadeInUp>
         </div>
       </section>
@@ -46,7 +147,7 @@ export default function StaffPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <FadeInUp>
             <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-700 leading-relaxed font-semibold px-4">
-              The success of ICPC Sri Lanka 2026/2027 is made possible by our dedicated organizing committee—a team of passionate professionals, educators, and volunteers working together to bring this event to life.
+              The success of ICPC Sri Lanka is made possible by our dedicated organizing committee—a team of passionate professionals, educators, and volunteers working together to bring this event to life.
             </p>
           </FadeInUp>
         </div>
@@ -73,7 +174,7 @@ export default function StaffPage() {
                   <tbody className="divide-y divide-gray-200">
                     {staffMembers.map((member, index) => (
                       <motion.tr
-                        key={index}
+                        key={`${activeCommittee}-${index}`}
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.3, delay: index * 0.05 }}
@@ -111,7 +212,7 @@ export default function StaffPage() {
               <div className="md:hidden space-y-3 p-3 sm:p-4">
                 {staffMembers.map((member, index) => (
                   <motion.div
-                    key={index}
+                    key={`${activeCommittee}-${index}`}
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.3, delay: index * 0.05 }}
@@ -184,4 +285,3 @@ export default function StaffPage() {
     </main>
   );
 }
-
