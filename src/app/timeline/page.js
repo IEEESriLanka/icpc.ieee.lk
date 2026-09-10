@@ -6,7 +6,8 @@ import {
   FaLaptopCode,
   FaTrophy,
   FaGlobeAsia,
-  FaCheckCircle
+  FaCheckCircle,
+  FaHourglassHalf
 } from 'react-icons/fa';
 import { FadeIn, ScaleIn, StaggerContainer, StaggerItem } from '@/components/AnimatedSection';
 
@@ -62,10 +63,10 @@ export default function Timeline() {
 
                 <StaggerItem>
                   <TimelineEvent
-                    date="TBD"
-                    title="Registrations Close"
-                    description="Registration deadline for teams. Make sure to complete your registration before this date to secure your spot in the competition."
-                    icon={<FaCheckCircle className="w-8 h-8" />}
+                    date="12th October 2026"
+                    title="Online Round Registration Deadline"
+                    description="Registration deadline for the Online Round. Make sure to complete your registration before this date to secure your spot in the competition."
+                    icon={<FaHourglassHalf className="w-8 h-8" />}
                     color="bg-[#143C68]"
                     actions={[
                       'Complete team registration',
@@ -77,7 +78,7 @@ export default function Timeline() {
 
                 <StaggerItem>
                   <TimelineEvent
-                    date="TBD"
+                    date="18th October 2026"
                     title="Preliminary Online Round"
                     description="An online preliminary round to help teams prepare and get familiar with the contest format."
                     icon={<FaLaptopCode className="w-8 h-8" />}
@@ -94,8 +95,23 @@ export default function Timeline() {
 
                 <StaggerItem>
                   <TimelineEvent
-                    date="TBD"
-                    title="Sri Lanka Onsite Regional"
+                    date="12th November 2026"
+                    title="Onsite Round Registration Deadline"
+                    description="Registration deadline for the Regional Onsite Round. Make sure to complete your registration before this date to secure your spot in the competition."
+                    icon={<FaCheckCircle className="w-8 h-8" />}
+                    color="bg-[#143C68]"
+                    actions={[
+                      'Complete onsite registration',
+                      'Submit all required documents',
+                      'Confirm registration fee payment'
+                    ]}
+                  />
+                </StaggerItem>
+
+                <StaggerItem>
+                  <TimelineEvent
+                    date="6th December 2026"
+                    title="Regional Onsite Round"
                     description="The main national contest held onsite. This is where history will be made as Sri Lanka hosts its first-ever ICPC contest!"
                     icon={<FaTrophy className="w-8 h-8" />}
                     color="bg-[#FDBC1D]"
@@ -159,9 +175,10 @@ export default function Timeline() {
             <div className="bg-[#FDBC1D] rounded-2xl sm:rounded-3xl p-6 sm:p-8 md:p-12 shadow-2xl">
               <div className="space-y-4 sm:space-y-6">
                 <QuickDate date="15th August 2026" event="Registrations Open" />
-                <QuickDate date="TBD" event="Registrations Close" />
-                <QuickDate date="TBD" event="Preliminary Online Round" />
-                <QuickDate date="TBD" event="Sri Lanka Onsite Regional" highlight={true} />
+                <QuickDate date="12th October 2026" event="Online Round Registration Deadline" />
+                <QuickDate date="18th October 2026" event="Preliminary Online Round" />
+                <QuickDate date="12th November 2026" event="Onsite Round Registration Deadline" />
+                <QuickDate date="6th December 2026" event="Regional Onsite Round" highlight={true} />
                 <QuickDate date="TBD" event="ICPC Asia West" />
                 <QuickDate date="TBD" event="ICPC World Finals" />
               </div>

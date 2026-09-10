@@ -35,8 +35,8 @@ export default function StructuredData() {
     "@type": "Event",
     "name": "ICPC Sri Lanka 2026/2027 National Contest",
     "description": "Sri Lanka's first International Collegiate Programming Contest - the world's most prestigious programming competition",
-    "startDate": "2026-01-25",
-    "endDate": "2026-01-25",
+    "startDate": "2026-12-06",
+    "endDate": "2026-12-06",
     "eventStatus": "https://schema.org/EventScheduled",
     "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
     "location": {
@@ -67,7 +67,7 @@ export default function StructuredData() {
       "price": "2000",
       "priceCurrency": "LKR",
       "availability": "https://schema.org/InStock",
-      "validFrom": "2025-11-11"
+      "validFrom": "2026-08-15"
     }
   };
 

@@ -29,15 +29,15 @@ export default function TimelineSection() {
             </FadeInLeft>
             <FadeInRight delay={0.2}>
               <TimelineCard
-                date="TBD"
-                title="Registrations Close"
+                date="12th October 2026"
+                title="Online Round Registration Deadline"
                 align="right"
                 color="bg-[#143C68]"
               />
             </FadeInRight>
             <FadeInLeft delay={0.3}>
               <TimelineCard
-                date="TBD"
+                date="18th October 2026"
                 title="Online Round"
                 align="left"
                 color="bg-[#143C68]"
@@ -45,29 +45,37 @@ export default function TimelineSection() {
             </FadeInLeft>
             <FadeInRight delay={0.4}>
               <TimelineCard
-                date="TBD"
-                title="Sri Lanka Onsite Regional"
+                date="12th November 2026"
+                title="Onsite Round Registration Deadline"
                 align="right"
-                color="bg-[#FDBC1D]"
-                highlight={true}
+                color="bg-[#143C68]"
               />
             </FadeInRight>
             <FadeInLeft delay={0.5}>
               <TimelineCard
-                date="TBD"
-                title="ICPC Asia West"
+                date="6th December 2026"
+                title="Regional Onsite Round"
                 align="left"
-                color="bg-[#B22E1B]"
+                color="bg-[#FDBC1D]"
+                highlight={true}
               />
             </FadeInLeft>
             <FadeInRight delay={0.6}>
               <TimelineCard
                 date="TBD"
-                title="ICPC World Finals"
+                title="ICPC Asia West"
                 align="right"
-                color="bg-red-500"
+                color="bg-[#B22E1B]"
               />
             </FadeInRight>
+            <FadeInLeft delay={0.7}>
+              <TimelineCard
+                date="TBD"
+                title="ICPC World Finals"
+                align="left"
+                color="bg-red-500"
+              />
+            </FadeInLeft>
           </div>
         </div>
         
