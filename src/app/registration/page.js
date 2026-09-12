@@ -330,7 +330,20 @@ function PreliminaryRegistrationContent() {
         />
         <RegistrationInfoPoint
           icon={<FaGlobe className="w-6 h-6" />}
-          text="After your local registration is verified, register your team on the ICPC Global Site following the instructions shared through the official WhatsApp group."
+          text={
+            <>
+              After your local registration is verified, register your team on the{' '}
+              <a
+                href="https://icpc.global/regionals/finder/Asia-Peradeniya-Preliminary-2027"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#143C68] font-bold underline hover:text-[#FDBC1D] transition-colors"
+              >
+                ICPC Global Site
+              </a>
+              .
+            </>
+          }
         />
         <RegistrationInfoPoint
           icon={<FaCheckCircle className="w-6 h-6" />}
@@ -354,6 +367,14 @@ function PreliminaryRegistrationContent() {
           className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 sm:px-12 py-3 sm:py-4 bg-[#143C68] text-white rounded-xl sm:rounded-2xl text-base sm:text-lg md:text-xl font-bold hover:bg-[#1e4a7a] transition-all duration-300 hover:-translate-y-1 shadow-lg hover:shadow-2xl"
         >
           Register Now
+        </a>
+        <a
+          href="https://icpc.global/regionals/finder/Asia-Peradeniya-Preliminary-2027"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="w-full sm:w-auto sm:ml-4 inline-flex items-center justify-center gap-2 px-8 sm:px-12 py-3 sm:py-4 bg-white text-[#143C68] border-2 border-[#143C68] rounded-xl sm:rounded-2xl text-base sm:text-lg md:text-xl font-bold hover:bg-[#143C68] hover:text-white transition-all duration-300 hover:-translate-y-1 shadow-lg hover:shadow-2xl"
+        >
+          Register on ICPC Global
         </a>
       </div>
     </div>
