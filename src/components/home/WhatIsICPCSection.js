@@ -7,7 +7,7 @@ import { ModernPathStep } from './PathStep';
 
 export default function WhatIsICPCSection() {
   return (
-    <section className="py-16 sm:py-24 md:py-32 bg-gray-50 relative overflow-hidden">
+    <section className="pt-12 sm:pt-16 md:pt-20 pb-16 sm:pb-24 md:pb-32 bg-gray-50 relative overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-10 left-10 w-64 h-64 bg-[#FDBC1D]/5 rounded-full blur-3xl"></div>

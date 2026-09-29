@@ -1,10 +1,11 @@
+import Image from 'next/image';
 import { TrophyIcon, GlobeAltIcon, AcademicCapIcon, UserGroupIcon } from '@heroicons/react/24/outline';
 import { FadeIn, ScaleIn, StaggerContainer, StaggerItem } from '@/components/AnimatedSection';
 import { ModernStatCard } from './StatCard';
 
 export default function StatsSection() {
   return (
-    <section className="py-16 sm:py-24 md:py-32 bg-white relative overflow-hidden">
+    <section className="pt-16 sm:pt-24 md:pt-32 pb-12 sm:pb-16 md:pb-20 bg-white relative overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-20 right-20 w-72 h-72 bg-[#143C68]/5 rounded-full blur-3xl"></div>
@@ -83,6 +84,41 @@ export default function StatsSection() {
             </div>
           </div>
         </ScaleIn>
+
+        {/* ICPC Sri Lanka 2026/27 powered by IFS */}
+        <FadeIn delay={0.6}>
+          <div className="mt-12 sm:mt-16 md:mt-20 text-center">
+            <div className="inline-flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-5 px-6 sm:px-10 py-5 sm:py-6 bg-gradient-to-r from-[#143C68]/5 via-[#FDBC1D]/10 to-[#143C68]/5 rounded-2xl sm:rounded-3xl border border-[#143C68]/15 shadow-xl backdrop-blur-sm transition-all duration-300 hover:shadow-2xl hover:border-[#FDBC1D]/40">
+              <div className="flex items-center gap-2.5 sm:gap-3">
+                <span className="w-2.5 h-2.5 rounded-full bg-[#FDBC1D] animate-pulse"></span>
+                <span className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-[#143C68] tracking-tight">
+                  ICPC Sri Lanka 2026/27
+                </span>
+              </div>
+              <div className="h-6 w-px bg-gray-300 hidden sm:block"></div>
+              <div className="flex items-center gap-2.5 sm:gap-3">
+                <span className="text-sm sm:text-base md:text-lg font-semibold uppercase tracking-wider text-gray-600">
+                  powered by
+                </span>
+                <a
+                  href="https://www.ifs.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center hover:opacity-80 transition-all duration-300 transform hover:scale-105"
+                  aria-label="IFS"
+                >
+                  <Image
+                    src="/ifs.png"
+                    alt="IFS"
+                    width={140}
+                    height={60}
+                    className="h-8 sm:h-9 md:h-11 w-auto object-contain drop-shadow-sm"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </FadeIn>
       </div>
     </section>
   );

@@ -84,7 +84,7 @@ export default function Footer() {
             <ul className="space-y-2 sm:space-y-2.5">
               <FooterLink href="/winners">Winners</FooterLink>
               <FooterLink href="/qualified-teams">Qualified Teams</FooterLink>
-              <FooterLink href="/plan-a-trip">Plan a Trip</FooterLink>
+              <FooterLink href="/plan-a-trip">Plan Your Trip</FooterLink>
               <FooterLink href="/staff">Staff</FooterLink>
               <FooterLink href="/sponsors">Support Us</FooterLink>
             </ul>
