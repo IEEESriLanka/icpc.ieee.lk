@@ -87,6 +87,38 @@ const committee2026 = [
     name: "Mr. Dineth Palliyaguru",
     position: "Communication Chair",
     url: "https://www.linkedin.com/in/dineth-palliyaguru"
+  }, {
+    name: "Mr. Nadeera Kothalawala",
+    position: "Communication Co-Chair",
+    url: "https://www.linkedin.com/in/nadeera-kothalawala-b4b51126b"
+  }, {
+    name: "Mr. Chamika Sandaruth",
+    position: "Communication Co-Chair / ACES",
+    url: "https://www.linkedin.com/in/chamika-sandaruth-a5a1b5b5"
+  }, {
+    name: "Mr. Eashan S. Bandara",
+    position: "Communication Co-Chair / IESL",
+    url: "https://www.linkedin.com/in/esithum/"
+  }, {
+    name: "Prof. Sidath Liyanage",
+    position: "Institutional / Academic Advisor",
+    url: ""
+  }, {
+    name: "Mr. Nadun Manilgama",
+    position: "Communication Chair / Treasurer",
+    url: ""
+  }, {
+    name: "Mr. Thisen Lakdinu",
+    position: "Technical Co-Chair",
+    url: "https://www.linkedin.com/in/thisenlakdinu"
+  }, {
+    name: "Ms. J.A. Sandali Uthpala",
+    position: "Registration & Eligibility Chair",
+    url: "https://www.linkedin.com/in/sandali-uthpala-7195ab302"
+  }, {
+    name: "Mr. Manodya Perera",
+    position: "Logistics Co-Chair",
+    url: "https://www.linkedin.com/in/manodya-perera"
   }
 ];
 
