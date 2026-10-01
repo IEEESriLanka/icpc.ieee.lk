@@ -8,6 +8,9 @@ import { FadeIn, ScaleIn, StaggerContainer, StaggerItem } from '@/components/Ani
 const EVENT_ALBUM_URL = 'https://drive.google.com/drive/folders/1m0BICEznbYXErQ8njB8lrKbIP63ttUHt?usp=drive_link';
 
 const GALLERY_PHOTOS = [
+  'y25_12.jpg',
+  'y25_28.jpg',
+  'y25_27.jpg',
   'y25_1.jpg',
   'y25_2.jpg',
   'y25_3.jpg',
@@ -19,7 +22,6 @@ const GALLERY_PHOTOS = [
   'y25_9.jpg',
   'y25_10.jpg',
   'y25_11.jpg',
-  'y25_12.jpg',
   'y25_13.jpg',
   'y25_14.jpg',
   'y25_15.jpg',
