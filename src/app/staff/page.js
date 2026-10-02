@@ -80,45 +80,133 @@ const committee2025 = [
 const committee2026 = [
   {
     name: "Dr. Upul Jayasinghe",
-    position: "Regional Director",
+    position: "Regional Country Director",
     url: "http://people.ce.pdn.ac.lk/staff/academic/upul/"
   },
   {
-    name: "Mr. Dineth Palliyaguru",
-    position: "Communication Chair",
-    url: "https://www.linkedin.com/in/dineth-palliyaguru"
-  }, {
-    name: "Mr. Nadeera Kothalawala",
-    position: "Communication Co-Chair",
-    url: "https://www.linkedin.com/in/nadeera-kothalawala-b4b51126b"
-  }, {
-    name: "Mr. Chamika Sandaruth",
-    position: "Communication Co-Chair / ACES",
-    url: "https://www.linkedin.com/in/chamika-sandaruth-a5a1b5b5"
-  }, {
-    name: "Mr. Eashan S. Bandara",
-    position: "Communication Co-Chair / IESL",
-    url: "https://www.linkedin.com/in/esithum/"
-  }, {
+    name: "Prof. Tharaka Samarasinghe",
+    position: "IEEE Sri Lanka Section Chair",
+    url: null
+  },
+  {
     name: "Prof. Sidath Liyanage",
-    position: "Institutional / Academic Advisor",
-    url: ""
-  }, {
+    position: "Academic Advisor",
+    url: null
+  },
+  {
+    name: "Prof. Roshan Ragel",
+    position: "Senior Treasurer",
+    url: "http://people.ce.pdn.ac.lk/staff/academic/roshan-ragel/"
+  },
+  {
+    name: "Eng. Lasitha Balasuriya",
+    position: "IESL Liaison",
+    url: null
+  },
+  {
+    name: "Mr. Nadeera Kothalawala",
+    position: "Organizing Co-Chair",
+    url: "https://www.linkedin.com/in/nadeera-kothalawala-b4b51126b"
+  },
+  {
+    name: "Mr. Dineth Palliyaguru",
+    position: "Organizing Co-Chair",
+    url: "https://www.linkedin.com/in/dineth-palliyaguru"
+  },
+  {
+    name: "Mr. Chamika Sandaruth",
+    position: "Organizing Co-Chair (ACES)",
+    url: "https://www.linkedin.com/in/chamika-sandaruth-a5a1b5b5"
+  },
+  {
+    name: "Mr. Eashan S. Bandara",
+    position: "Organizing Co-Chair (IESL)",
+    url: "https://www.linkedin.com/in/esithum/"
+  },
+  {
+    name: "Ms. Sasanka Wakista",
+    position: "Secretary",
+    url: null
+  },
+  {
+    name: "Mr. Kusal Nirukshan",
+    position: "Assistant Secretary",
+    url: null
+  },
+  {
     name: "Mr. Nadun Manilgama",
-    position: "Communication Chair / Treasurer",
-    url: ""
-  }, {
+    position: "Finance Chair (ACES)",
+    url: null
+  },
+  {
+    name: "Ms. Kulakshi Thathsarani",
+    position: "Finance Chair (IEEE CodeX SL)",
+    url: null
+  },
+  {
+    name: "Mr. Daniru Dinsara",
+    position: "Sponsor Relations Coordinator",
+    url: null
+  },
+  {
+    name: "Mr. Biswajith Dissanayake",
+    position: "Technical Chair",
+    url: "http://people.ce.pdn.ac.lk/staff/academic/biswajith-dissanayake/"
+  },
+  {
     name: "Mr. Thisen Lakdinu",
     position: "Technical Co-Chair",
     url: "https://www.linkedin.com/in/thisenlakdinu"
-  }, {
-    name: "Ms. J.A. Sandali Uthpala",
-    position: "Registration & Eligibility Chair",
+  },
+  {
+    name: "Ms. J. A. Sandali Uthpala",
+    position: "Registration Chair",
     url: "https://www.linkedin.com/in/sandali-uthpala-7195ab302"
-  }, {
+  },
+  {
+    name: "Mr. Geethma Kapurubandara",
+    position: "Registration Co-Chair",
+    url: null
+  },
+  {
+    name: "Mr. Thilina Gunarathne",
+    position: "Logistics Chair",
+    url: null
+  },
+  {
     name: "Mr. Manodya Perera",
     position: "Logistics Co-Chair",
     url: "https://www.linkedin.com/in/manodya-perera"
+  },
+  {
+    name: "Ms. Yashoda Vimukthi",
+    position: "Communications, Ceremony & Protocols Chair",
+    url: "http://people.ce.pdn.ac.lk/staff/academic/yasodha-vimukthi/"
+  },
+  {
+    name: "Mr. Lahiru Dinusha Bandara",
+    position: "Communications Co-Chair",
+    url: null
+  },
+  {
+    name: "Mr. Sachith Nirmal",
+    position: "Programme Coordinator",
+    url: null
+  },
+  {
+    name: "Mr. Minraj Ali",
+    position: "Partnerships Liaison",
+    url: null
+  },
+  {
+    name: "Mr. Minindu Bimsara",
+    position: "Website & Content Lead",
+    url: null
+  },
+  {
+    name: "Mr. Thamalu Bambaravanage",
+    position: "Media & Publicity Lead",
+    url: null
   }
 ];
 
