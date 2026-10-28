@@ -1,10 +1,16 @@
 'use client';
 
+import { useState } from 'react';
 import { FaTrophy, FaStar } from 'react-icons/fa';
 import { FadeIn, ScaleIn, StaggerContainer, StaggerItem } from '@/components/AnimatedSection';
 
-export default function QualifiedTeams() {
-  const teams = [
+const seasons = [
+  { id: '2025-26', label: 'ICPC Sri Lanka Finalists 25/26' },
+  { id: '2026-27', label: 'ICPC Sri Lanka Finalists 26/27' },
+];
+
+const finalists = {
+  '2025-26': [
     { name: '3D-X', university: 'Chennai Institute of Technology' },
     { name: 'AfterShock', university: 'East West University' },
     { name: 'APX', university: 'Chennai Institute of Technology' },
@@ -34,8 +40,75 @@ export default function QualifiedTeams() {
     { name: 'Syntax Warriors', university: 'Sri Lanka Institute of Information Technology' },
     { name: 'Team Xcode', university: 'Open University of Sri Lanka' },
     { name: 'Empyrean', university: 'Empyrean School' },
-    { name: 'Team Glory', university: 'Sri Lanka Institute of Information Technology' }
-  ];
+    { name: 'Team Glory', university: 'Sri Lanka Institute of Information Technology' },
+  ],
+  '2026-27': [
+    { name: 'just_good', university: 'IIT Bombay' },
+    { name: '2.6 hog riders', university: 'Indian Institute of Technology Kanpur' },
+    { name: 'Knurdz Decoherence', university: 'University of Moratuwa' },
+    { name: 'Apex Predictors', university: 'Sabaragamuwa University of Sri Lanka' },
+    { name: 'Nocturnals', university: 'University of Peradeniya' },
+    { name: '#exclude', university: 'Indian Institute of Technology Bombay' },
+    { name: 'FourZeroFour', university: 'University of Moratuwa' },
+    { name: 'NeuralStack', university: 'APIIT' },
+    { name: 'XOR', university: 'University of Moratuwa' },
+    { name: 'EchoBinary', university: 'University of Moratuwa' },
+    { name: 'Arceus2004', university: 'University of Moratuwa' },
+    { name: 'KodersX', university: 'University of Peradeniya' },
+    { name: 'hehe', university: 'University of Colombo' },
+    { name: 'trojanHex', university: 'University of Moratuwa' },
+    { name: 'Velosphere', university: 'University of Moratuwa' },
+    { name: 'Infinite', university: 'Ajeenkya DY Patil University' },
+    { name: 'Kok', university: 'University of Moratuwa' },
+    { name: 'Total Chaos Squad', university: 'University of Moratuwa' },
+    { name: 'Zero Protocol', university: 'University of Peradeniya' },
+    { name: 'Team Hackstreet Boys', university: 'University of Moratuwa' },
+    { name: 'Mavericks', university: 'SLIIT' },
+    { name: 'Yosync', university: 'University of Peradeniya' },
+    { name: 'Runtime Rebels', university: 'South Eastern University of Sri Lanka' },
+    { name: 'Potatato', university: 'Lanka Nippon BizTech Institute' },
+    { name: 'PurgyXTeam', university: 'Lanka Nippon BizTech Institute' },
+    { name: 'Badgers', university: 'University of Moratuwa' },
+    { name: 'Git Happens', university: 'SLIIT Northern Uni' },
+    { name: 'Hungry Beasts', university: 'The Open University of Sri Lanka' },
+    { name: 'Syntax Samurai', university: 'The Open University of Sri Lanka' },
+    { name: 'BLE', university: 'University of Moratuwa' },
+    { name: 'Proof or Perish', university: 'Indian Institute of Technology Kharagpur' },
+    { name: 'DecaMinds', university: 'Sabaragamuwa University of Sri Lanka' },
+    { name: 'CodeMode', university: 'Sri Lanka Institute of Information Technology' },
+    { name: 'Nasakarar', university: 'University of Peradeniya' },
+    { name: 'TheWeak3', university: 'Faculty of Technology, University of Delhi' },
+    { name: 'BinaryBeast', university: 'University of Jaffna' },
+    { name: 'TLE on test 29', university: 'IIT Kanpur' },
+    { name: 'Vizhaiyor', university: 'University of Peradeniya' },
+    { name: 'Hackophiles', university: 'University of Peradeniya' },
+    { name: 'Penguins', university: 'University of Peradeniya' },
+    { name: 'NovaCore', university: 'University of Peradeniya' },
+    { name: 'RePeaTers', university: 'University of Sri Jayewardenepura' },
+    { name: 'SANDbox', university: 'University of Moratuwa' },
+    { name: 'The Falcon\'s Xtreme', university: 'General Sir John Kotelawala Defence University' },
+    { name: 'infinite_coders', university: 'University of Peradeniya' },
+    { name: 'Bug slayers', university: 'University of Peradeniya' },
+    { name: 'CodingDucks', university: 'University of Moratuwa' },
+    { name: 'std::win', university: 'University of Moratuwa' },
+    { name: 'Code Blooded', university: 'University of Colombo School of Computing' },
+    { name: 'Atreides', university: 'Sri Lanka Institute of Information Technology' },
+    { name: 'alt+f4', university: 'University of Peradeniya' },
+    { name: 'Omega n', university: 'University of Peradeniya' },
+    { name: 'CodeForge', university: 'University of Peradeniya' },
+    { name: '404', university: 'ICBT Colombo' },
+    { name: 'Heuristic Logicians', university: 'Management and Science Institute' },
+    { name: 'Codefevers', university: 'University of Kelaniya' },
+    { name: 'Qorvenz', university: 'University of Moratuwa' },
+    { name: 'Amethyst', university: 'NIBM' },
+    { name: 'KpolitX', university: 'LNBTI University' },
+    { name: 'Error 404', university: 'SLIIT' },
+  ]
+};
+
+export default function QualifiedTeams() {
+  const [activeSeason, setActiveSeason] = useState('2026-27');
+  const teams = finalists[activeSeason] || [];
 
   return (
     <main className="min-h-screen bg-gray-50">
@@ -60,8 +133,25 @@ export default function QualifiedTeams() {
             </h1>
             <div className="h-2 w-20 sm:w-24 bg-[#FDBC1D] mx-auto mb-8 sm:mb-10 rounded-full"></div>
             <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-[#FDBC1D] font-semibold max-w-4xl mx-auto px-4">
-              Top 30 Teams from Preliminary Online Round
+              Top {teams.length} Teams from Preliminary Online Round
             </p>
+
+            {/* Season Tabs */}
+            <div className="mt-8 sm:mt-10 flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-3 sm:gap-4">
+              {seasons.map((season) => (
+                <button
+                  key={season.id}
+                  onClick={() => setActiveSeason(season.id)}
+                  className={`px-5 sm:px-8 py-3 sm:py-4 rounded-xl sm:rounded-2xl text-sm sm:text-base md:text-lg font-bold transition-all duration-300 shadow-lg cursor-pointer ${
+                    activeSeason === season.id
+                      ? 'bg-[#FDBC1D] text-[#143C68] shadow-xl'
+                      : 'bg-white/10 text-white hover:bg-white/20 border-2 border-white/30'
+                  }`}
+                >
+                  {season.label}
+                </button>
+              ))}
+            </div>
           </div>
         </section>
       </FadeIn>
@@ -71,10 +161,10 @@ export default function QualifiedTeams() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <FadeIn delay={0.2}>
             <div className="bg-white rounded-2xl sm:rounded-3xl shadow-2xl p-6 sm:p-8 md:p-12">
-              <StaggerContainer>
+              <StaggerContainer key={activeSeason}>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
-                  {teams.map((team) => (
-                    <StaggerItem key={team.name}>
+                  {teams.map((team, index) => (
+                    <StaggerItem key={`${activeSeason}-${team.name}-${index}`}>
                       <TeamCard
                         name={team.name}
                         university={team.university}
@@ -87,7 +177,7 @@ export default function QualifiedTeams() {
               {/* Note Section */}
               <div className="mt-8 sm:mt-10 md:mt-12 pt-6 sm:pt-8 border-t-2 border-gray-200">
                 <p className="text-sm sm:text-base text-gray-600 text-center font-medium leading-relaxed">
-                  <span className="font-bold text-[#143C68]">Note:</span> Kindly note that this list shows the top 30 teams arranged by team number rather than contest rankings.
+                  <span className="font-bold text-[#143C68]">Note:</span> Kindly note that this list shows the top {teams.length} teams arranged by team number rather than contest rankings.
                 </p>
               </div>
             </div>
