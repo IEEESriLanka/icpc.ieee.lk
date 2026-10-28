@@ -38,7 +38,7 @@ export default function Navbar() {
             <NavLink href="/plan-a-trip">Plan Your Trip</NavLink>
             <NavLink href="/faq">FAQ</NavLink>
             <NavLink href="/gallery">Gallery</NavLink>
-            <NavLink href="/winners">Past Winners</NavLink>
+            <NavLink href="/winners">Winners</NavLink>
             <NavLink href="/staff">Staff</NavLink>
             <NavLink href="/sponsors">Support Us</NavLink>
           </div>
@@ -68,7 +68,7 @@ export default function Navbar() {
               <MobileNavLink href="/plan-a-trip" onClick={() => setIsMenuOpen(false)}>Plan Your Trip</MobileNavLink>
               <MobileNavLink href="/faq" onClick={() => setIsMenuOpen(false)}>FAQ</MobileNavLink>
               <MobileNavLink href="/gallery" onClick={() => setIsMenuOpen(false)}>Gallery</MobileNavLink>
-              <MobileNavLink href="/winners" onClick={() => setIsMenuOpen(false)}>Past Winners</MobileNavLink>
+              <MobileNavLink href="/winners" onClick={() => setIsMenuOpen(false)}>Winners</MobileNavLink>
               <MobileNavLink href="/staff" onClick={() => setIsMenuOpen(false)}>Staff</MobileNavLink>
               <MobileNavLink href="/sponsors" onClick={() => setIsMenuOpen(false)}>Support Us</MobileNavLink>
             </div>

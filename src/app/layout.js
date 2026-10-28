@@ -62,12 +62,13 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <head>
         <StructuredData />
       </head>
       <body
         className={`${inter.variable} font-sans antialiased`}
+        suppressHydrationWarning
       >
         <Analytics />
         <Navbar />
