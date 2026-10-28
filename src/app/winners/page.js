@@ -533,9 +533,6 @@ function OnlineSeasonSection({ seasonId, seasonLabel, badgeText, teams, isLatest
                           <h4 className="text-base sm:text-lg font-bold text-[#143C68] truncate">
                             {team.name}
                           </h4>
-                          <span className="text-[11px] font-semibold text-gray-500 bg-gray-100 px-2 py-0.5 rounded-full shrink-0">
-                            #{index + 1}
-                          </span>
                         </div>
                         <p className="text-xs sm:text-sm text-gray-600 font-medium leading-snug">
                           {team.university}
